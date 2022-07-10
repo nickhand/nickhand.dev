@@ -12,10 +12,10 @@
       <div
         class="flex md:flex-row flex-col justify-center items-center md:items-start"
       >
-        <div class="md:w-1/3 w-full max-w-md">
+        <div class="md:w-1/3 w-full max-w-md flex justify-center">
           <!-- Circular portrat -->
           <img
-            class="overflow-hidden rounded-full"
+            class="overflow-hidden rounded-full max-w-[350px]"
             src="../assets/profile.jpg"
             alt="profile"
           />
