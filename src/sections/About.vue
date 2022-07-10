@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+import { VuePdf } from "vue3-pdfjs/esm";
+</script>
 
 <template>
   <section id="about-me" class="flex justify-center">
@@ -21,13 +23,13 @@
           />
         </div>
 
-        <div class="md:w-2/3 w-full md:ml-20 mt-20 md:mt-0 text-lg">
+        <div class="md:w-2/3 w-full md:ml-20 mt-20 md:mt-0 text-lg p-5">
           <p class="mb-5">
             I'm the director of the Finance, Policy, and Data unit in the
             <a
               class="underline decoration-solid text-[#FF4908]"
               href="https://controller.phila.gov/"
-              target="blank_"
+              target="_blank"
               >Office of the City Controller
               <font-awesome-icon
                 icon="fa-solid fa-arrow-up-right-from-square"
@@ -38,7 +40,7 @@
             <a
               class="underline decoration-solid text-[#FF4908]"
               href="https://controller.phila.gov/policy-analysis/reports/"
-              target="blank_"
+              target="_blank"
               >analysis
               <font-awesome-icon
                 icon="fa-solid fa-arrow-up-right-from-square"
@@ -54,7 +56,7 @@
             <a
               class="underline decoration-solid text-[#FF4908]"
               href="https://www.design.upenn.edu/musa/about"
-              target="blank_"
+              target="_blank"
               >Masters of Urban Spatial Analytics
               <font-awesome-icon
                 icon="fa-solid fa-arrow-up-right-from-square"
@@ -66,7 +68,7 @@
             <a
               class="underline decoration-solid text-[#FF4908]"
               href="https://musa-550-fall-2021.github.io/"
-              target="blank_"
+              target="_blank"
               >on Github
               <font-awesome-icon
                 icon="fa-solid fa-arrow-up-right-from-square"
@@ -93,7 +95,7 @@
             <a
               class="underline decoration-solid text-[#FF4908]"
               href="http://www.princeton.edu/main/news/archive/S33/21/69O40/index.xml?section=topstories"
-              target="blank_"
+              target="_blank"
               >for the first time ever
               <font-awesome-icon
                 icon="fa-solid fa-arrow-up-right-from-square"
@@ -109,20 +111,6 @@
             distances, and watching and playing baseball. I live in Fairmount in
             Philadelphia, PA, with my wife, our 7-month-old daughter, and our
             5-year-old rescue dog.
-          </p>
-
-          <p class="mb-5">
-            For more details regarding my professional work, please see
-            <a
-              class="underline decoration-solid text-[#FF4908]"
-              href="/assets/resume-nick-hand.pdf"
-              target="blank_"
-              >my resume
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="ml-1"
-              ></font-awesome-icon></a
-            >.
           </p>
         </div>
       </div>

@@ -16,7 +16,8 @@
     "@vuelidate/core": "^2.0.0-alpha.42",
     "@vuelidate/validators": "^2.0.0-alpha.30",
     "axios": "^0.27.2",
-    "vue": "^3.2.25"
+    "vue": "^3.2.25",
+    "vue3-pdfjs": "^0.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",

@@ -120,7 +120,7 @@ function sendEmail() {
               <label class="form-input-label" for="name">Name</label>
               <div class="form-input">
                 <input
-                  class="input-lg w-full border-2 border-solid border-black p-2"
+                  class="input-lg w-full border-2 border-solid border-black p-5"
                   type="text"
                   name="name"
                   id="name"
@@ -138,7 +138,7 @@ function sendEmail() {
               <label class="form-input-label" for="email">Email Address</label>
               <div class="form-input">
                 <input
-                  class="input-lg w-full border-2 border-solid border-black p-2"
+                  class="input-lg w-full border-2 border-solid border-black p-5"
                   id="email"
                   type="text"
                   name="email"
@@ -156,7 +156,7 @@ function sendEmail() {
               <label class="form-input-label" for="message">Message</label>
               <div class="form-input">
                 <textarea
-                  class="input-lg w-full border-2 border-solid border-black p-2"
+                  class="input-lg w-full border-2 border-solid border-black p-5"
                   name="message"
                   id="message"
                   rows="8"
