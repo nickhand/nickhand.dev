@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+@layer components {
+  .social-icon-btn {
+    @apply rounded-full 
+          inline-block 
+          w-[50px] 
+          h-[50px] 
+          border-[1px] 
+          border-solid 
+          border-[#262626] 
+          hover:bg-white 
+          hover:rotate-[360deg] 
+          transition 
+          duration-700;
+  }
+
+  .btn-default {
+    @apply bg-transparent 
+          text-base 
+          uppercase 
+          border-[2px] 
+          border-solid 
+          border-[#262626] 
+          px-[26px] 
+          py-[12px] 
+          tracking-[2px] 
+          font-semibold 
+          transition-all 
+          ease-in-out 
+          delay-100 
+          hover:bg-[#262626] 
+          hover:text-white;
+  }
+}
