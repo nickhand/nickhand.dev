@@ -242,7 +242,9 @@ function sendEmail() {
 
             <!-- Submit -->
             <div class="form-actions mt-5">
-              <button type="submit" class="btn-default">Submit Message</button>
+              <button type="submit" class="btn-default w-full md:w-fit">
+                Submit Message
+              </button>
             </div>
           </form>
         </div>
