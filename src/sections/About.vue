@@ -110,6 +110,20 @@
             Philadelphia, PA, with my wife, our 7-month-old daughter, and our
             5-year-old rescue dog.
           </p>
+
+          <p class="mb-5">
+            For more details regarding my professional work, please see
+            <a
+              class="underline decoration-solid text-[#FF4908]"
+              href="/assets/resume-nick-hand.pdf"
+              target="blank_"
+              >my resume
+              <font-awesome-icon
+                icon="fa-solid fa-arrow-up-right-from-square"
+                class="ml-1"
+              ></font-awesome-icon></a
+            >.
+          </p>
         </div>
       </div>
     </div>
