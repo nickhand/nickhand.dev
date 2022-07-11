@@ -1,4 +1,5 @@
 import { createApp } from "vue";
+import { createMetaManager } from "vue-meta";
 import App from "./App.vue";
 import "./index.css";
 
@@ -37,4 +38,7 @@ library.add(
 );
 
 // Create the app
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+createApp(App)
+  .component("font-awesome-icon", FontAwesomeIcon)
+  .use(createMetaManager())
+  .mount("#app");

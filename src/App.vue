@@ -2,9 +2,47 @@
 import HeaderSection from "./sections/Header.vue";
 import AboutSection from "./sections/About.vue";
 import ContactSection from "./sections/Contact.vue";
+import { useMeta } from "vue-meta";
+
+const description = "Personal website for Nick Hand in Philadelphia, PA.";
+const title = "Nick Hand | Philadelphia";
+useMeta({
+  title: title,
+  htmlAttrs: {
+    lang: "en",
+    amp: true,
+  },
+  meta: [
+    { vmid: "description", name: "description", content: description },
+    {
+      vmid: "og:title",
+      property: "og:title",
+      content: title,
+    },
+    {
+      vmid: "og:description",
+      property: "og:description",
+      content: description,
+    },
+    {
+      vmid: "og:image:alt",
+      property: "og:image:alt",
+      content: description,
+    },
+    {
+      vmid: "og:url",
+      property: "og:url",
+      content: "https://www.nickhand.dev",
+    },
+  ],
+});
 </script>
 
 <template>
+  <metainfo>
+    <template v-slot:title="{ content }">{{ content }}</template>
+  </metainfo>
+
   <!-- Main Sections -->
   <HeaderSection />
   <AboutSection class="w-full" />
