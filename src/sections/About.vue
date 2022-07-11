@@ -108,9 +108,9 @@ import { VuePdf } from "vue3-pdfjs/esm";
             I graduated from Princeton in 2011 with a B.A. in astrophysics and a
             certificate in the applications of computing. When not analyzing
             interesting data sets, I enjoy gardening, reading, running long
-            distances, and watching and playing baseball. I live in Fairmount in
-            Philadelphia, PA, with my wife, our 7-month-old daughter, and our
-            5-year-old rescue dog.
+            distances, and watching and playing baseball. I live in the
+            Fairmount neighborhood of Philadelphia, PA, with my wife, our
+            7-month-old daughter, and our 5-year-old rescue dog.
           </p>
         </div>
       </div>
