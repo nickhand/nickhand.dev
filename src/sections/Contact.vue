@@ -39,7 +39,7 @@ function sendEmail() {
 
     // If no issues, submit
     axios
-      .post("https://formspree.io/f/nicholas.adam.hand@gmail.com", {
+      .post("https://formspree.io/f/mqknvyrr", {
         name: state.name,
         from: state.email,
         _subject: `${state.name} | Contact Form from nickhand.dev`,
