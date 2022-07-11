@@ -25,7 +25,7 @@
     <!-- Linkedin -->
     <a
       href="https://www.linkedin.com/in/nickhandphl"
-      class="social-icon-btn hover:text-[#015786]"
+      class="social-icon-btn hover:text-[#0077B5]"
     >
       <font-awesome-icon
         icon="fa-brands fa-linkedin-in"
