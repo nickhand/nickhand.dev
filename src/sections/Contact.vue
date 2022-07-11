@@ -47,6 +47,7 @@ function sendEmail() {
       })
       .then((response) => {
         // Success
+        v$.value.$reset();
         showSuccess.value = true;
 
         // Reset
@@ -58,6 +59,7 @@ function sendEmail() {
       })
       .catch((error) => {
         // Failure
+        v$.value.$reset();
         showFailure.value = true;
       });
   });
