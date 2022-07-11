@@ -1,5 +1,18 @@
 <script setup>
-import { VuePdf } from "vue3-pdfjs/esm";
+import { ref } from "vue";
+
+function monthDiff(d1, d2) {
+  var months;
+  months = (d2.getFullYear() - d1.getFullYear()) * 12;
+  months -= d1.getMonth();
+  months += d2.getMonth();
+  return months <= 0 ? 0 : months;
+}
+
+const sybilAge = ref(monthDiff(new Date(2021, 11, 16), new Date()));
+const bruceAge = ref(
+  Math.round(monthDiff(new Date(2017, 6, 24), new Date()) / 12)
+);
 </script>
 
 <template>
@@ -110,7 +123,8 @@ import { VuePdf } from "vue3-pdfjs/esm";
             interesting data sets, I enjoy gardening, reading, running long
             distances, and watching and playing baseball. I live in the
             Fairmount neighborhood of Philadelphia, PA, with my wife, our
-            7-month-old daughter, and our 5-year-old rescue dog.
+            {{ sybilAge }}-month-old daughter, and our {{ bruceAge }}-year-old
+            rescue dog.
           </p>
         </div>
       </div>
