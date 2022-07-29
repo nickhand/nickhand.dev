@@ -2,16 +2,16 @@
 import { ref } from "vue";
 
 function monthDiff(d1, d2) {
-  var months;
+  let months;
   months = (d2.getFullYear() - d1.getFullYear()) * 12;
   months -= d1.getMonth();
   months += d2.getMonth();
   return months <= 0 ? 0 : months;
 }
 
-const sybilAge = ref(monthDiff(new Date(2021, 11, 16), new Date()));
+const sybilAge = ref(monthDiff(new Date(2021, 10, 16), new Date()));
 const bruceAge = ref(
-  Math.round(monthDiff(new Date(2017, 6, 24), new Date()) / 12)
+  Math.round(monthDiff(new Date(2017, 5, 24), new Date()) / 12)
 );
 </script>
 
@@ -20,7 +20,7 @@ const bruceAge = ref(
     <div class="container">
       <!-- Header -->
       <div class="font-medium text-center text-[#FF4908] text-5xl mb-20">
-        Hi there, I'm Nick.
+        Hello there, I'm Nick.
       </div>
 
       <!-- Main content -->
