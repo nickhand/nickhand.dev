@@ -38,32 +38,12 @@ const bruceAge = ref(
 
         <div class="md:w-2/3 w-full md:ml-20 mt-20 md:mt-0 text-lg p-5">
           <p class="mb-5">
-            I'm the director of the Finance, Policy, and Data unit in the
-            <a
-              class="underline decoration-solid text-[#FF4908]"
-              href="https://controller.phila.gov/"
-              target="_blank"
-              >Office of the City Controller
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="ml-1"
-              ></font-awesome-icon
-            ></a>
-            in Philadelphia. My team works to produce data-driven, objective
-            <a
-              class="underline decoration-solid text-[#FF4908]"
-              href="https://controller.phila.gov/policy-analysis/reports/"
-              target="_blank"
-              >analysis
-              <font-awesome-icon
-                icon="fa-solid fa-arrow-up-right-from-square"
-                class="ml-1"
-              ></font-awesome-icon
-            ></a>
-            of issues with financial impact for the City of Philadelphia and
-            improve transparency around the City's spending of taxpayer dollars.
+            I am currently a technologist working at the Consumer Finance
+            Protection Bureau (CFPB) working to detect and prevent unfair,
+            deceptive, and abusive practices in consumer financial services.
           </p>
 
+          <!-- Penn MUSA -->
           <p class="mb-5">
             I also teach a Python-based geospatial data science course in the
             <a
@@ -88,6 +68,35 @@ const bruceAge = ref(
                 class="ml-1"
               ></font-awesome-icon></a
             >.
+          </p>
+
+          <p class="mb-5">
+            Prior to working at the CFPB, I was the director of the Finance,
+            Policy, and Data unit in the
+            <a
+              class="underline decoration-solid text-[#FF4908]"
+              href="https://controller.phila.gov/"
+              target="_blank"
+              >Office of the City Controller
+              <font-awesome-icon
+                icon="fa-solid fa-arrow-up-right-from-square"
+                class="ml-1"
+              ></font-awesome-icon
+            ></a>
+            in Philadelphia under City Controller Rebecca Rhynhart. My team
+            worked to produce data-driven, objective
+            <a
+              class="underline decoration-solid text-[#FF4908]"
+              href="https://controller.phila.gov/policy-analysis/reports/"
+              target="_blank"
+              >analysis
+              <font-awesome-icon
+                icon="fa-solid fa-arrow-up-right-from-square"
+                class="ml-1"
+              ></font-awesome-icon
+            ></a>
+            of issues with financial impact for the City of Philadelphia and
+            improve transparency around the City's spending of taxpayer dollars.
           </p>
 
           <p class="mb-5">
@@ -122,7 +131,7 @@ const bruceAge = ref(
             certificate in the applications of computing. When not analyzing
             interesting data sets, I enjoy gardening, reading, running long
             distances, and watching and playing baseball. I live in the
-            Fairmount neighborhood of Philadelphia, PA, with my wife, our
+            Wissahickon neighborhood of Philadelphia, PA, with my wife, our
             {{ sybilAge }}-month-old daughter, and our {{ bruceAge }}-year-old
             rescue dog.
           </p>

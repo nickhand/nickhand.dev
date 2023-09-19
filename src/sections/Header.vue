@@ -12,12 +12,7 @@ import SocialIcons from "../components/SocialIcons.vue";
     <TypeWriter
       class="text-6xl mt-5 mb-10 text-center min-h-[140px]"
       highlight-color="#FF4908"
-      :display-text-array="[
-        'Public Servant',
-        'Data Scientist',
-        'Policy Director',
-        'Educator',
-      ]"
+      :display-text-array="['Public Servant', 'Technologist', 'Educator']"
       :typingSpeed="100"
       :erasingSpeed="75"
       :newTextDisplay="1250"
