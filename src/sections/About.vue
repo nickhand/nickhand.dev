@@ -38,9 +38,9 @@ const bruceAge = ref(
 
         <div class="md:w-2/3 w-full md:ml-20 mt-20 md:mt-0 text-lg p-5">
           <p class="mb-5">
-            I am currently a technologist working at the Consumer Finance
-            Protection Bureau (CFPB) working to detect and prevent unfair,
-            deceptive, and abusive practices in consumer financial services.
+            I am currently a technologist at the Consumer Finance Protection
+            Bureau (CFPB) working to detect and prevent unfair, deceptive, and
+            abusive practices in consumer financial services.
           </p>
 
           <!-- Penn MUSA -->
