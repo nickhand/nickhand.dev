@@ -12,7 +12,7 @@
     </a>
 
     <!-- Twitter -->
-    <a
+    <!-- <a
       href="https://twitter.com/nicholashand"
       class="social-icon-btn hover:text-[#2ba9e0] mr-4"
     >
@@ -20,7 +20,7 @@
         icon="fa-brands fa-twitter"
         class="w-2/3 h-full mx-auto block"
       ></font-awesome-icon>
-    </a>
+    </a> -->
 
     <!-- Linkedin -->
     <a
