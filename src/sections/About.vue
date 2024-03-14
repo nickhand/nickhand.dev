@@ -38,8 +38,8 @@ const bruceAge = ref(
 
         <div class="md:w-2/3 w-full md:ml-20 mt-20 md:mt-0 text-lg p-5">
           <p class="mb-5">
-            I am currently a technologist working in the enforcement division of
-            the Consumer Financial Protection Bureau (CFPB) working to hold
+            I am currently a technologist in the enforcement division of the
+            Consumer Financial Protection Bureau (CFPB) working to hold
             companies accountable for unfair, deceptive, or abusive practices
             towards consumers.
           </p>
