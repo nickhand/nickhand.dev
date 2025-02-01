@@ -1,4 +1,9 @@
 [[redirects]]
 from = "/parkingjawn"
-to = "https://www.parkingjawn.com/"
+to = "https://www.parkingjawn.com/:splat"
 force = true
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
