@@ -4,6 +4,12 @@ to = "https://www.parkingjawn.com/"
 force = true
 
 [[redirects]]
+from = "/philly-gun-violence"
+to = "https://phillygunviolence.netlify.app"
+status = 200
+force = true
+
+[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
