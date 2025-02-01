@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/parkingjawn"
-to = "https://www.parkingjawn.com"
+from = "/parkingjawn/*"
+to = "https://www.parkingjawn.com/:splat"
 status = 200
 force = true
