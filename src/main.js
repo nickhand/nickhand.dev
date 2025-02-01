@@ -3,6 +3,12 @@ import { createMetaManager } from "vue-meta";
 import App from "./App.vue";
 import "./index.css";
 
+/* import the fontawesome core */
+import { library } from "@fortawesome/fontawesome-svg-core";
+
+/* import font awesome icon component */
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
 /* import specific icons */
 import {
   faGithub,
@@ -35,5 +41,4 @@ library.add(
 createApp(App)
   .component("font-awesome-icon", FontAwesomeIcon)
   .use(createMetaManager())
-  .use(router)
   .mount("#main");
