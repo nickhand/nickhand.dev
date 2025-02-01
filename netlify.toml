@@ -6,7 +6,6 @@ force = true
 [[redirects]]
 from = "/philly-gun-violence"
 to = "https://phillygunviolence.netlify.app"
-status = 200
 force = true
 
 [[redirects]]
