@@ -1,5 +1,4 @@
 [[redirects]]
-from = "/parkingjawn/*"
-to = "https://www.parkingjawn.com/2017/1"
-status = 200
+from = "/parkingjawn"
+to = "https://www.parkingjawn.com/"
 force = true
