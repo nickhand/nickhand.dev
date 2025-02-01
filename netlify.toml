@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/parking-jawn"
-to = "https://nimble-sprite-3f26f5.netlify.app/"
+from = "/parkingjawn"
+to = "https://www.parkingjawn.com"
 status = 200
 force = true
