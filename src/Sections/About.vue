@@ -45,7 +45,7 @@ const bruceAge = ref(
 
           <!-- Penn MUSA -->
           <p class="mb-5">
-            I also teach a Python-based geospatial data science course in the
+            I also taught a Python-based geospatial data science course in the
             <a
               class="underline decoration-solid text-[#FF4908]"
               href="https://www.design.upenn.edu/musa/about"
@@ -56,11 +56,11 @@ const bruceAge = ref(
                 class="ml-1"
               ></font-awesome-icon>
             </a>
-            program at the University of Pennsylvania. Course materials for the
-            latest iteration of the course are available
+            program at the University of Pennsylvania from 2019 to 2023. Course
+            materials for the latest iteration of the course are available
             <a
               class="underline decoration-solid text-[#FF4908]"
-              href="https://musa-550-fall-2021.github.io/"
+              href="https://musa-550-fall-2023.github.io/"
               target="_blank"
               >on Github
               <font-awesome-icon
