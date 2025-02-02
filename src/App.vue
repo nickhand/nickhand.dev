@@ -1,6 +1,7 @@
 <script setup>
 import HeaderSection from "./Sections/Header.vue";
 import AboutSection from "./Sections/About.vue";
+import ProjectsSection from "./Sections/Projects.vue";
 import ContactSection from "./Sections/Contact.vue";
 import { useMeta } from "vue-meta";
 
@@ -46,6 +47,7 @@ useMeta({
   <!-- Main Sections -->
   <HeaderSection />
   <AboutSection class="w-full" />
+  <ProjectsSection class="w-full mt-20" />
   <ContactSection class="w-full mt-20" />
 
   <!-- Footer -->

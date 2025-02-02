@@ -1,7 +1,8 @@
 [[redirects]]
-from = "/parkingjawn"
+from = "/parking-jawn"
 to = "https://www.parkingjawn.com/"
 force = true
+status = 200
 
 [[redirects]]
 from = "/mapping-gun-violence"
