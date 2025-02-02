@@ -57,15 +57,17 @@ const projects = ref([
   },
   {
     title: "Parking Jawn",
-    description: "A brief description of the second project.",
+    description:
+      "An interactive dashboard allowing users to explore parking violations in Philadelphia from 2012 to 2017.",
     image: "https://nickhand.dev/parking-jawn.png",
     link: "https://parkingjawn.com",
   },
   {
-    title: "Project Three",
-    description: "A brief description of the third project.",
-    image: "https://source.unsplash.com/400x300/?design",
-    link: "#",
+    title: "MUSA 550: Geospatial Data Science in Python",
+    description:
+      "The course materials for MUSA 550, a masters course at the University of Pennsylvania that teaches students to use Python to gather, visualize, and analyze geospatial data with an urban planning and public policy focus.",
+    image: "https://nickhand.dev/musa-550.png",
+    link: "https://musa-550-fall-2023.github.io",
   },
 ]);
 </script>
