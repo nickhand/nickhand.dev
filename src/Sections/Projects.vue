@@ -59,7 +59,7 @@ const projects = ref([
     title: "Parking Jawn",
     description: "A brief description of the second project.",
     image: "https://nickhand.dev/parking-jawn.png",
-    link: "https://nickhand.dev/parking-jawn",
+    link: "https://parkingjawn.com",
   },
   {
     title: "Project Three",
