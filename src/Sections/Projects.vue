@@ -53,7 +53,7 @@ const projects = ref([
     description:
       "An interactive app mapping shooting victims in Philadelphia for the current year, updated daily, with historical data dating back to 2015.",
     image: "https://phillygunviolence.netlify.app/gun-violence-dashboard.png",
-    link: "https://nickhand.dev/mapping-gun-violence",
+    link: "https://nickhand.dev/philly-gun-violence-map",
   },
   {
     title: "Parking Jawn",
