@@ -5,12 +5,13 @@ force = true
 status = 200
 
 [[redirects]]
-from = "/mapping-gun-violence"
+from = "/philly-gun-violence-map"
 to = "https://phillygunviolence.netlify.app"
 force = true
 status = 200
 
+
 [[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+from = "/mapping-gun-violence"
+to = "/philly-gun-violence-map"
+status = 301
