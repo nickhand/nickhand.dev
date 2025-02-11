@@ -55,7 +55,7 @@ useMeta({
     class="text-sm text-[#a1a1a1] mt-20 mb-5 flex flex-row justify-center"
   >
     <div class="copyright">
-      <p>&copy; Nick Hand 2022</p>
+      <p>&copy; Nick Hand {{ new Date().getFullYear() }}</p>
     </div>
   </footer>
 </template>

@@ -31,12 +31,22 @@
               {{ project.title }}
             </h2>
             <p class="text-gray-600 mt-2">{{ project.description }}</p>
-            <a
-              :href="project.link"
-              class="inline-block mt-4 bg-[#FF4908] text-white py-2 px-4 rounded-xl shadow-md hover:bg-[#d43800] transition"
-            >
-              View Project
-            </a>
+
+            <!-- Buttons -->
+            <div class="flex-row items-center mt-4">
+              <a
+                :href="project.link"
+                class="inline-block bg-[#FF4908] text-white py-2 px-4 rounded-xl shadow-md hover:bg-[#d43800] transition"
+              >
+                View Project
+              </a>
+              <a
+                :href="project.github"
+                class="inline-block bg-[#FF4908] text-white py-2 px-4 rounded-xl shadow-md hover:bg-[#d43800] transition ml-4"
+              >
+                View GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -54,6 +64,7 @@ const projects = ref([
       "An interactive app mapping shooting victims in Philadelphia for the current year, updated daily, with historical data dating back to 2015.",
     image: "https://phillygunviolence.netlify.app/gun-violence-dashboard.png",
     link: "https://nickhand.dev/philly-gun-violence-map",
+    github: "https://github.com/nickhand/GunViolenceDashboard",
   },
   {
     title: "Parking Jawn",
@@ -61,6 +72,7 @@ const projects = ref([
       "An interactive dashboard allowing users to explore parking violations in Philadelphia from 2012 to 2017.",
     image: "https://nickhand.dev/parking-jawn.png",
     link: "https://parkingjawn.com",
+    github: "https://github.com/nickhand/parking-jawn",
   },
   {
     title: "MUSA 550: Geospatial Data Science in Python",
@@ -68,6 +80,8 @@ const projects = ref([
       "The course materials for MUSA 550, a masters course at the University of Pennsylvania that teaches students to use Python to gather, visualize, and analyze geospatial data with an urban planning and public policy focus.",
     image: "https://nickhand.dev/musa-550.png",
     link: "https://musa-550-fall-2023.github.io",
+    github:
+      "https://github.com/MUSA-550-Fall-2023/musa-550-fall-2023.github.io",
   },
 ]);
 </script>

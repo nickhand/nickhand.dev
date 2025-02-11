@@ -47,7 +47,7 @@ const bruceAge = ref(
           <p class="mb-5">
             I also taught a Python-based geospatial data science course in the
             <a
-              class="underline decoration-solid text-[#FF4908]"
+              class="underline decoration-solid text-[#FF4908] hover:text-[#d43800]"
               href="https://www.design.upenn.edu/musa/about"
               target="_blank"
               >Masters of Urban Spatial Analytics
@@ -59,7 +59,7 @@ const bruceAge = ref(
             program at the University of Pennsylvania from 2019 to 2023. Course
             materials for the latest iteration of the course are available
             <a
-              class="underline decoration-solid text-[#FF4908]"
+              class="underline decoration-solid text-[#FF4908] hover:text-[#d43800]"
               href="https://musa-550-fall-2023.github.io/"
               target="_blank"
               >on Github
@@ -74,7 +74,7 @@ const bruceAge = ref(
             Prior to working at the CFPB, I was the director of the Finance,
             Policy, and Data unit in the
             <a
-              class="underline decoration-solid text-[#FF4908]"
+              class="underline decoration-solid text-[#FF4908] hover:text-[#d43800]"
               href="https://controller.phila.gov/"
               target="_blank"
               >Office of the City Controller
@@ -86,7 +86,7 @@ const bruceAge = ref(
             in Philadelphia under City Controller Rebecca Rhynhart. My team
             worked to produce data-driven, objective
             <a
-              class="underline decoration-solid text-[#FF4908]"
+              class="underline decoration-solid text-[#FF4908] hover:text-[#d43800]"
               href="https://controller.phila.gov/policy-analysis/reports/"
               target="_blank"
               >analysis
@@ -115,7 +115,7 @@ const bruceAge = ref(
             most exciting research achievements involved leading a team that
             measured the kinematic Sunyaev-Zel'dovich effect
             <a
-              class="underline decoration-solid text-[#FF4908]"
+              class="underline decoration-solid text-[#FF4908] hover:text-[#d43800]"
               href="http://www.princeton.edu/main/news/archive/S33/21/69O40/index.xml?section=topstories"
               target="_blank"
               >for the first time ever
