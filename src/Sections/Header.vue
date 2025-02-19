@@ -23,10 +23,8 @@ import SocialIcons from "../components/SocialIcons.vue";
       <a href="#contact-me" class="btn-default">Contact Me</a>
 
       <!-- Contact button -->
-      <a
-        href="/nick-hand-resume-feb-2025.pdf"
-        class="btn-default ml-0 md:ml-4 md:mt-0 mt-4"
-        >Resume</a
+      <a href="#projects" class="btn-default ml-0 md:ml-4 md:mt-0 mt-4"
+        >Projects</a
       >
     </div>
 
