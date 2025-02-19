@@ -26,6 +26,9 @@
   .btn-default {
     @apply bg-transparent 
           text-base 
+          inline-block
+          w-48
+          text-center
           uppercase 
           border-[2px] 
           border-solid 

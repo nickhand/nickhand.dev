@@ -62,7 +62,7 @@ const projects = ref([
     title: "Mapping Philadelphia's Gun Violence",
     description:
       "An interactive app mapping shooting victims in Philadelphia for the current year, updated daily, with historical data dating back to 2015.",
-    image: "https://phillygunviolence.netlify.app/gun-violence-dashboard.png",
+    image: "/gun-violence-dashboard.png",
     link: "https://nickhand.dev/philly-gun-violence-map",
     github: "https://github.com/nickhand/GunViolenceDashboard",
   },
@@ -70,7 +70,7 @@ const projects = ref([
     title: "Parking Jawn",
     description:
       "An interactive dashboard allowing users to explore parking violations in Philadelphia from 2012 to 2017.",
-    image: "https://nickhand.dev/parking-jawn.png",
+    image: "/parking-jawn.png",
     link: "https://parkingjawn.com",
     github: "https://github.com/nickhand/parking-jawn",
   },
@@ -78,7 +78,7 @@ const projects = ref([
     title: "MUSA 550: Geospatial Data Science in Python",
     description:
       "The course materials for MUSA 550, a masters course at the University of Pennsylvania that teaches students to use Python to gather, visualize, and analyze geospatial data with an urban planning and public policy focus.",
-    image: "https://nickhand.dev/musa-550.png",
+    image: "/musa-550.png",
     link: "https://musa-550-fall-2023.github.io",
     github:
       "https://github.com/MUSA-550-Fall-2023/musa-550-fall-2023.github.io",
