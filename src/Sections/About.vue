@@ -130,9 +130,10 @@ const bruceAge = ref(
             I graduated from Princeton in 2011 with a B.A. in astrophysics and a
             certificate in the applications of computing. When not analyzing
             interesting data sets, I enjoy gardening, reading, running long
-            distances, and watching and playing baseball. I live in the
+            distances, and watching and playing baseball.
+            <!-- I live in the
             Wissahickon neighborhood of Philadelphia, PA, with my wife, our two
-            young children, and our {{ bruceAge }}-year-old rescue dog.
+            young children, and our {{ bruceAge }}-year-old rescue dog. -->
           </p>
         </div>
       </div>
