@@ -10,6 +10,12 @@ to = "https://phillygunviolence.netlify.app"
 force = true
 status = 200
 
+[[redirects]]
+from = "/philly-gun-violence-map/*"
+to = "https://phillygunviolence.netlify.app/:splat"
+force = true
+status = 200
+
 
 [[redirects]]
 from = "/mapping-gun-violence"
