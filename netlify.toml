@@ -6,16 +6,15 @@ status = 200
 
 [[redirects]]
 from = "/philly-gun-violence-map"
-to = "https://phillygunviolence.netlify.app"
+to = "https://phillygunviolence.netlify.app/philly-gun-violence-map/"
 force = true
 status = 200
 
 [[redirects]]
 from = "/philly-gun-violence-map/*"
-to = "https://phillygunviolence.netlify.app/:splat"
+to = "https://phillygunviolence.netlify.app/philly-gun-violence-map/:splat"
 force = true
 status = 200
-
 
 [[redirects]]
 from = "/mapping-gun-violence"
