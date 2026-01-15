@@ -64,7 +64,7 @@ const projects = ref([
       "An interactive app mapping shooting victims in Philadelphia for the current year, updated daily, with historical data dating back to 2015.",
     image: "/gun-violence-dashboard.png",
     link: "https://nickhand.dev/philly-gun-violence-map",
-    github: "https://github.com/nickhand/GunViolenceDashboard",
+    github: "https://github.com/nickhand/philly-gun-violence-dashboard",
   },
   {
     title: "Parking Jawn",
