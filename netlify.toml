@@ -1,3 +1,10 @@
+# Canonical: redirect bare domain → www to prevent duplicate content indexing
+[[redirects]]
+  from = "https://nickhand.dev/*"
+  to = "https://www.nickhand.dev/:splat"
+  status = 301
+  force = true
+
 [[redirects]]
 from = "/parking-jawn"
 to = "https://www.parkingjawn.com/"

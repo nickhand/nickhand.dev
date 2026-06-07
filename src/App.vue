@@ -1,6 +1,5 @@
 <script setup>
 import { ref, nextTick, onMounted, onUnmounted } from "vue";
-import { useMeta } from "vue-meta";
 import SiteHeader from "./components/SiteHeader.vue";
 import HeroSection from "./components/HeroSection.vue";
 import AboutSection from "./components/AboutSection.vue";
@@ -9,25 +8,6 @@ import WritingSection from "./components/WritingSection.vue";
 import ContactSection from "./components/ContactSection.vue";
 import SiteFooter from "./components/SiteFooter.vue";
 import PhlMap from "./components/PhlMap.vue";
-
-const description =
-  "Nick Hand is a technologist, data scientist, and educator based in Philadelphia. His work focuses on data, technology, and public accountability.";
-const title = "Nick Hand, PhD — technologist, data scientist, educator";
-
-useMeta({
-  title,
-  htmlAttrs: { lang: "en" },
-  meta: [
-    { vmid: "description", name: "description", content: description },
-    { vmid: "og:title", property: "og:title", content: title },
-    {
-      vmid: "og:description",
-      property: "og:description",
-      content: description,
-    },
-    { vmid: "og:url", property: "og:url", content: "https://www.nickhand.dev" },
-  ],
-});
 
 const showEgg = ref(false);
 const eggMap = ref(null);
@@ -97,10 +77,6 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <metainfo>
-    <template v-slot:title="{ content }">{{ content }}</template>
-  </metainfo>
-
   <div
     class="min-h-screen bg-zinc-50 font-sans text-zinc-800 antialiased selection:bg-ink/15"
   >
