@@ -6,7 +6,7 @@
       <span class="mt-1 block max-w-md text-[14.5px] leading-6 text-zinc-600">{{ description }}</span>
       <span class="mt-2 block font-mono text-[12px] text-zinc-500">{{ meta }}</span>
     </span>
-    <span class="mt-1 font-mono text-ink opacity-0 transition-all duration-[180ms] group-hover:translate-x-[3px] group-hover:opacity-100">→</span>
+    <span class="mt-1 font-mono text-ink opacity-30 transition-all duration-[180ms] group-hover:translate-x-[3px] group-hover:opacity-100">→</span>
   </a>
 </template>
 

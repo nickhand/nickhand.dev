@@ -2,8 +2,8 @@
   <section
     class="grid grid-cols-1 gap-x-6 gap-y-4 border-b border-zinc-200 py-12 md:grid-cols-[5rem_1fr]"
   >
-    <div class="tabular-nums font-mono text-[12px] text-zinc-500">
-      §01<br /><span class="text-zinc-600">about</span>
+    <div class="tabular-nums font-mono text-[12px]">
+      <span class="text-ink">§01</span><br /><span class="text-zinc-500">about</span>
     </div>
     <div>
       <p class="max-w-xl text-[16px] leading-8 text-zinc-700">
