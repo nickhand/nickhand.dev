@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -21,8 +22,12 @@
     "vue-meta": "^3.0.0-alpha.10"
   },
   "devDependencies": {
+    "@typescript-eslint/parser": "^8.60.1",
     "@vitejs/plugin-vue": "^2.3.3",
     "autoprefixer": "^10.4.7",
+    "eslint": "^10.4.1",
+    "eslint-plugin-vue": "^10.9.2",
+    "eslint-plugin-vuejs-accessibility": "^2.5.0",
     "postcss": "^8.4.14",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.2",

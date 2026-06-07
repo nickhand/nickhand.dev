@@ -1,7 +1,7 @@
 <template>
   <section id="work" class="grid grid-cols-1 gap-x-6 gap-y-4 border-b border-zinc-200 py-12 md:grid-cols-[5rem_1fr]">
     <div class="tabular-nums font-mono text-[12px]">
-      <span class="text-ink">§02</span><br /><span class="text-zinc-500">selected work</span>
+      <span class="text-ink">§02</span><br /><h2 class="m-0 p-0 font-mono text-[12px] font-normal text-zinc-500">selected work</h2>
     </div>
     <div class="divide-y divide-zinc-200 border-y border-zinc-200">
       <WorkItem

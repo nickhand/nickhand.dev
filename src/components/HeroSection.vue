@@ -31,6 +31,7 @@
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
       <a
         :href="links.resume"
+        aria-label="Resume (PDF)"
         class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
         >resume</a
       >

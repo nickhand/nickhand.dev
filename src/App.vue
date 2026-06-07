@@ -106,7 +106,7 @@ onUnmounted(() => {
   >
     <!-- you're reading the source. nice. the rest of the work is public too. say hi → nicholas.adam.hand@gmail.com -->
     <SiteHeader />
-    <main id="top" class="mx-auto max-w-3xl px-6">
+    <main id="main-content" class="mx-auto max-w-3xl px-6">
       <HeroSection />
       <AboutSection />
       <SelectedWork />
@@ -125,6 +125,7 @@ onUnmounted(() => {
     >
       <div
         v-if="showEgg"
+        aria-live="polite"
         class="pointer-events-none fixed inset-x-0 bottom-6 z-50 flex justify-center px-4"
       >
         <div
