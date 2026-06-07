@@ -2,45 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .flex-col-center {
-    @apply flex flex-col justify-center items-center;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-@layer components {
-  .social-icon-btn {
-    @apply rounded-full 
-          inline-block 
-          w-[50px] 
-          h-[50px] 
-          border-[1px] 
-          border-solid 
-          border-[#262626] 
-          hover:bg-white 
-          hover:rotate-[360deg] 
-          transition 
-          duration-700;
-  }
-
-  .btn-default {
-    @apply bg-transparent 
-          text-base 
-          inline-block
-          w-48
-          text-center
-          uppercase 
-          border-[2px] 
-          border-solid 
-          border-[#262626] 
-          px-[26px] 
-          py-[12px] 
-          tracking-[2px] 
-          font-semibold 
-          transition-all 
-          ease-in-out 
-          delay-100 
-          hover:bg-[#262626] 
-          hover:text-white;
-  }
+/* Philadelphia city-limits map */
+.phl-city { fill: none; stroke: #355f7d; stroke-linejoin: round; stroke-linecap: round; }
+.phl-creek { fill: none; stroke: #5b86a3; stroke-linecap: round; opacity: .75; }
+.phl-pin { fill: #b4543a; transform-box: fill-box; transform-origin: center; }
+.phl-draw { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.phl-go .phl-draw { animation: phldraw 1.7s ease forwards; }
+.phl-go .phl-creek { animation-delay: .55s; animation-duration: 1.25s; }
+.phl-go .phl-pin { opacity: 0; animation: phlpin .55s cubic-bezier(.34,1.56,.64,1) 1.5s forwards; }
+@keyframes phldraw { to { stroke-dashoffset: 0; } }
+@keyframes phlpin { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .phl-draw { stroke-dashoffset: 0; }
+  .phl-pin { opacity: 1; animation: none; }
 }
+
+/* Footer heartbeat */
+.phl-heart { display: inline-block; animation: phlbeat 3.2s ease-in-out infinite; }
+@keyframes phlbeat { 0%, 28%, 100% { transform: scale(1); } 14% { transform: scale(1.28); } 21% { transform: scale(1.12); } }
+@media (prefers-reduced-motion: reduce) { .phl-heart { animation: none; } }

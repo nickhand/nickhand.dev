@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nick Hand, PhD — Public Data Notebook</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          mono: ['IBM Plex Mono', 'ui-monospace', 'monospace'],
+          sans: ['IBM Plex Sans', 'system-ui', 'sans-serif'],
+        },
+        colors: { ink: '#355f7d' },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  a.ml { transition: color .18s ease; }
+  a.ml:hover { color: #355f7d; }
+  .gutter { font-variant-numeric: tabular-nums; }
+  .rowlink:hover .rt { color: #355f7d; }
+  .rowlink:hover .arrow { transform: translateX(3px); opacity: 1; }
+  .wlink .wt, .wlink .wm { transition: color .18s ease, transform .18s ease; }
+  .wlink:hover .wt { color: #355f7d; transform: translateX(2px); }
+  .wlink:hover .wm { color: #52525b; }
+  #egg { opacity: 0; transform: translateY(12px); transition: opacity .45s ease, transform .45s ease; }
+  #egg.show { opacity: 1; transform: none; }
+  .blink { animation: blink 1.05s step-end infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+  .phl-city{fill:none;stroke:#355f7d;stroke-linejoin:round;stroke-linecap:round;}
+  .phl-creek{fill:none;stroke:#5b86a3;stroke-linecap:round;opacity:.75;}
+  .phl-pin{fill:#b4543a;transform-box:fill-box;transform-origin:center;}
+  .phl-draw{stroke-dasharray:1;stroke-dashoffset:1;}
+  .phl-go .phl-draw{animation:phldraw 1.7s ease forwards;}
+  .phl-go .phl-creek{animation-delay:.55s;animation-duration:1.25s;}
+  .phl-go .phl-pin{opacity:0;animation:phlpin .55s cubic-bezier(.34,1.56,.64,1) 1.5s forwards;}
+  @keyframes phldraw{to{stroke-dashoffset:0;}}
+  @keyframes phlpin{from{opacity:0;transform:scale(0);}to{opacity:1;transform:scale(1);}}
+  @media (prefers-reduced-motion:reduce){.phl-draw{stroke-dashoffset:0;}.phl-pin{opacity:1;animation:none;}}
+  .phl-heart{display:inline-block;animation:phlbeat 3.2s ease-in-out infinite;}
+  @keyframes phlbeat{0%,28%,100%{transform:scale(1);}14%{transform:scale(1.28);}21%{transform:scale(1.12);}}
+  @media (prefers-reduced-motion:reduce){.phl-heart{animation:none;}}
+</style>
+</head>
+<body class="bg-zinc-50 font-sans text-zinc-800 antialiased selection:bg-ink/15">
+<script>
+  window.PHL_GEO={"vb":"0 0 100 108.78","h":108.78,"city":"M81.75 0 L87.02 4.07 L88.26 2.44 L88.46 2.66 L88.6 2.99 L88.48 3.27 L88.36 3.34 L88.39 3.59 L88.27 3.79 L88.32 3.95 L88.07 4.35 L88.11 4.71 L88.56 4.83 L89.26 4.68 L89.71 4.73 L89.95 5.53 L90.53 5.99 L91.03 5.63 L91.23 5.78 L91.47 5.75 L91.7 5.94 L91.69 6.26 L91.85 6.47 L91.77 6.72 L91.58 6.85 L91.61 7.07 L91.75 7.21 L91.96 7.24 L92.2 7.14 L92.4 7.18 L92.75 7.47 L93.22 7.35 L93.33 7.19 L93.57 7.22 L93.78 7.03 L93.86 7.13 L94.04 7.13 L94.24 7.29 L94.75 7.28 L95.21 7.78 L95.55 8.42 L95.85 8.49 L96.13 8.38 L96.42 8.04 L97.15 7.75 L97.29 7.83 L97.42 8.3 L97.71 8.55 L97.73 8.87 L97.64 9.14 L97.74 9.37 L97.41 9.88 L97.53 10.57 L97.42 10.89 L97.55 11.29 L97.43 11.45 L97.27 11.47 L96.96 12 L97.13 12.35 L97.66 12.49 L97.7 12.57 L97.56 12.69 L97.47 12.99 L97.9 13.21 L97.91 13.45 L98.38 13.92 L98.29 14.4 L98.34 14.69 L98.18 14.89 L98.07 15.4 L98.17 15.58 L98.04 15.79 L98.2 15.97 L98.14 16.15 L98.36 16.27 L98.55 16.23 L98.77 16.31 L99.23 16.58 L99.51 16.88 L99.83 16.89 L100 17.25 L99.8 17.78 L99.78 18.13 L99.32 19.05 L99.37 19.31 L99.23 19.62 L99.43 20.45 L99.3 20.55 L99.21 21.26 L99.1 21.54 L99.19 21.71 L99.01 21.86 L98.98 22.33 L98.73 22.39 L98.63 22.87 L98.04 23.51 L97.91 23.87 L97.93 24.11 L97.61 24.48 L96.78 24.4 L96.66 24.49 L96.55 24.75 L95.9 24.8 L95.69 24.72 L95.53 24.82 L95.35 24.82 L95.22 24.96 L95.22 25.32 L95.11 25.55 L95.29 25.8 L94.92 26.05 L94.82 26.47 L94.54 26.64 L94.44 26.84 L94.1 27.02 L94.02 27.37 L93.53 27.65 L93.31 28.13 L92.71 28.45 L92.24 28.94 L92.17 29.24 L92.25 29.65 L92.19 30.1 L92.28 30.3 L92.21 30.6 L92.24 30.99 L92.38 31.31 L92.16 31.42 L91.85 31.85 L91.21 32.21 L90.94 32.47 L90.94 32.57 L91.19 32.93 L91.22 33.28 L91.41 33.56 L91.75 33.83 L92.63 33.95 L94.13 35.64 L93.83 36.11 L93.56 36.41 L92.56 36.84 L92.17 37.16 L91.16 38.52 L90.15 39.4 L86.75 43.3 L83.38 46.04 L82.48 46.92 L81.79 47.47 L80.74 48.08 L80.08 48.35 L75.65 49.27 L74.69 49.62 L73.53 50.23 L71.32 51.78 L70.23 52.91 L69.37 54.51 L68.36 56.82 L67.54 59.27 L66.66 60.96 L64.98 62.72 L64.11 63.47 L63 64.18 L61.94 64.66 L61.26 64.89 L56.76 65.96 L55.14 66.45 L53.99 66.9 L52.31 67.74 L49.56 69.28 L47 70.95 L46.16 71.73 L45.61 72.75 L44.81 74.75 L44.45 76.28 L44.36 77.26 L44.56 79.2 L44.48 82.04 L44.55 83.37 L44.72 84.15 L45.89 87.63 L46.25 88.99 L46.53 91.15 L46.5 93.03 L46.18 94.54 L45.77 95.88 L45.32 97.2 L44.51 99.21 L43.37 100.78 L42.89 101.36 L42.51 101.65 L41.81 102 L41.33 102.09 L37.08 102.46 L33.33 103.22 L31.45 103.42 L29.5 103.37 L28.74 103.49 L28.14 103.74 L26.52 104.68 L24.54 105.99 L22.69 107.33 L21.05 108.78 L19.8 107.31 L19.9 105.31 L18.66 105.56 L17.42 105.41 L15.5 105.01 L14.23 104.87 L13.79 105.05 L13.54 105.27 L13.36 105.7 L13.19 105.72 L13.2 105.83 L13 105.92 L12.6 106.44 L12.39 106.54 L12.39 106.72 L12.27 106.8 L11.73 106.65 L10.34 105.72 L9.82 105.15 L8.64 105.37 L5.48 105.12 L4.71 103.35 L4.68 103.07 L4.93 102.84 L5.56 102.71 L5.68 102.51 L5.51 102.28 L4.89 102.01 L4.83 101.84 L5.28 101.61 L5.45 101.41 L5.39 101.29 L5.03 101.29 L4.78 101.15 L4.69 100.71 L4.94 100.36 L5.43 100.38 L5.55 100.3 L5.72 99 L6.03 98.84 L6.53 98.74 L6.75 98.52 L7.28 97.77 L7.07 97.37 L7.73 96.3 L7.76 96.16 L7.59 95.89 L8.94 93.93 L8.26 93.45 L8.57 93.03 L8.8 92.98 L9.25 92.6 L9.36 91.93 L8.96 91.75 L8.96 91.62 L9.28 91.19 L9.69 90.92 L9.84 90.49 L10.24 90.15 L10.04 89.73 L10.34 89.17 L10.2 88.8 L10.07 87.85 L10.11 86.94 L10.49 86.38 L10.65 85.71 L10.88 85.3 L11.08 85.14 L11.01 84.77 L11.17 84.37 L11.2 83.79 L11.07 83.47 L11.28 83.3 L11.37 82.9 L11.84 82.23 L12.26 82.19 L12.54 82.29 L12.88 82.57 L13.1 82.63 L13.28 82.55 L13.45 82.2 L13.55 81.49 L13.98 81.08 L14.04 80.86 L13.96 80.36 L13.54 80.23 L12.72 80.36 L12.38 80.31 L12.19 80.02 L12.6 79.31 L12.37 78.77 L10.39 78.52 L10.1 77.84 L9.83 77.41 L9.36 76.94 L9.21 76.35 L8.87 75.94 L8.99 75.31 L8.85 75.07 L8.84 74.76 L8.97 74.51 L8.98 74.31 L9.32 73.92 L9.46 73.48 L9.59 73.37 L9.56 73.12 L9.67 72.92 L9.13 72.24 L9.07 71.96 L9.78 71.46 L9.96 71.16 L10.06 70.38 L10.14 70.26 L9.98 69.96 L9.3 69.53 L9.01 69.62 L8.88 69.42 L8.34 69.48 L8.06 69.39 L7.88 69.61 L7.55 69.77 L7.26 70.08 L7.05 70.05 L6.92 70.12 L6.88 69.8 L6.71 69.74 L6.61 69.31 L6.1 69.02 L5.86 69.15 L5.64 69.1 L5.5 69.3 L5.29 69.37 L5.12 69.31 L4.85 69.48 L4.6 69.46 L4.39 69.18 L4.09 69.14 L3.65 68.9 L3.43 68.6 L3.2 68.6 L2.99 68.08 L2.62 68.04 L2.26 67.83 L1.55 67.8 L1.43 67.44 L1.2 67.37 L1.12 67.16 L1.16 67.05 L0.85 67.09 L0.8 67.01 L0.85 66.9 L0.52 66.63 L0.36 65.97 L0.11 65.76 L0 65.53 L1.21 64.72 L5.11 62.46 L6.65 61.35 L7.45 60.58 L22.49 51.37 L22.51 51.05 L22.84 50.73 L20.93 49.23 L19.86 47.75 L18.92 46.83 L18.58 46.6 L17.91 46.39 L16.69 45.41 L14.89 44.22 L14.07 43.37 L12.39 41.94 L11.75 41.09 L10.73 40.39 L10.07 39.2 L9.68 38.69 L8.7 37.72 L7.38 36.64 L6.69 35.97 L4.87 33.74 L11.47 25.83 L17.48 18.09 L28.29 26.17 L31.98 21.41 L35.81 24.36 L44.2 30.55 L47.74 33.35 L52.7 37.06 L53.27 36.16 L53.2 36.11 L53.25 36.04 L53.61 35.65 L57.06 32.98 L59.42 29.9 L56.56 27.73 L59.58 23.84 L61.35 21.64 L62.39 20.98 L68.36 12.91 L80.03 2.27 L80.83 1.24 Z","creek":"M22.65 49.28 L23.05 47.23 L21.97 40.19 L21.48 30.66 L20.43 24.11 L19.81 20.49","pin":[23.2,45.42]};
+</script>
+<!-- you're reading the source. nice. the rest of the work is public too. say hi → nicholas.adam.hand@gmail.com -->
+
+  <header class="sticky top-0 z-10 border-b border-zinc-200 bg-zinc-50/85 backdrop-blur">
+    <div class="mx-auto flex max-w-3xl items-center justify-between px-6 py-3">
+      <a href="#top" class="font-mono text-[14px] font-medium text-zinc-900">nickhand.dev</a>
+      <nav class="flex gap-5 font-mono text-[13px] text-zinc-500">
+        <a href="#work" class="ml">work</a>
+        <a href="#writing" class="ml hidden sm:inline">writing</a>
+        <a href="#contact" class="ml">contact</a>
+        <a href="#" class="ml text-ink">resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="mx-auto max-w-3xl px-6">
+
+    <!-- Hero -->
+    <section class="border-b border-zinc-200 py-14">
+      <div class="mb-6 flex items-center gap-3 font-mono text-[12px] text-zinc-500">
+        <span>Philadelphia, PA</span>
+        <span class="h-px flex-1 bg-zinc-200"></span>
+        <span id="phl-mark" class="shrink-0 self-center" aria-hidden="true" title="Philadelphia"></span>
+      </div>
+      <h1 class="text-3xl font-semibold leading-tight tracking-tight text-zinc-900 sm:text-[40px]">Nick Hand<span class="text-ink">, PhD</span></h1>
+      <p class="mt-3 max-w-xl text-xl leading-8 text-zinc-700">Technologist, data scientist, and educator based in Philadelphia.</p>
+      <p class="mt-4 max-w-xl text-[16px] leading-8 text-zinc-600">My work focuses on data, technology, and public accountability. I care about the public sector and the practical work of making government function better.</p>
+      <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
+        <a href="#" class="ml rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:border-ink">resume</a>
+        <a href="#" class="ml rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:border-ink">github</a>
+        <a href="#" class="ml rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:border-ink">linkedin</a>
+        <a href="mailto:nicholas.adam.hand@gmail.com" class="ml rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:border-ink">email</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="grid grid-cols-1 gap-x-6 gap-y-4 border-b border-zinc-200 py-12 md:grid-cols-[5rem_1fr]">
+      <div class="gutter font-mono text-[12px] text-zinc-500">§01<br /><span class="text-zinc-600">about</span></div>
+      <div>
+        <p class="max-w-xl text-[16px] leading-8 text-zinc-700">I currently lead analytics work at Voyatek, supporting data engineering and analytics tools for IRS anti-money-laundering compliance exams. Previously, I worked as an enforcement technologist at the Consumer Financial Protection Bureau, where I focused on technology issues including AI/ML, algorithmic bias, data security, and privacy.</p>
+        <p class="mt-4 max-w-xl text-[16px] leading-8 text-zinc-600">Before that, I led the Finance, Policy, and Data unit in the Philadelphia City Controller’s Office, producing public analysis on property assessments, gun violence, spending, taxes, and city operations. I have also taught geospatial data science in Python at the University of Pennsylvania.</p>
+        <p class="mt-4 max-w-xl text-[16px] leading-8 text-zinc-600">I started my career in astrophysics, earning a PhD from UC&nbsp;Berkeley and a BA from Princeton.</p>
+      </div>
+    </section>
+
+    <!-- Selected work -->
+    <section id="work" class="grid grid-cols-1 gap-x-6 gap-y-4 border-b border-zinc-200 py-12 md:grid-cols-[5rem_1fr]">
+      <div class="gutter font-mono text-[12px] text-zinc-500">§02<br /><span class="text-zinc-600">selected work</span></div>
+      <div class="divide-y divide-zinc-200 border-y border-zinc-200">
+        <a href="#" class="rowlink flex items-start gap-4 py-4">
+          <span class="gutter mt-1 font-mono text-[12px] text-zinc-500">01</span>
+          <span class="flex-1">
+            <span class="rt block text-[17px] font-medium text-zinc-900 transition-colors">Mapping Philadelphia’s Gun Violence</span>
+            <span class="mt-1 block max-w-md text-[14.5px] leading-6 text-zinc-600">Interactive public data project tracking shootings using public records, geospatial analysis, and web-based visualization.</span>
+            <span class="mt-2 block font-mono text-[12px] text-zinc-500">public-data · geospatial · dataviz · philadelphia</span>
+          </span>
+          <span class="arrow mt-1 font-mono text-ink opacity-0 transition-all">→</span>
+        </a>
+        <a href="#" class="rowlink flex items-start gap-4 py-4">
+          <span class="gutter mt-1 font-mono text-[12px] text-zinc-500">02</span>
+          <span class="flex-1">
+            <span class="rt block text-[17px] font-medium text-zinc-900 transition-colors">ProgressPHL</span>
+            <span class="mt-1 block max-w-md text-[14.5px] leading-6 text-zinc-600">A neighborhood well-being dashboard developed at the Philadelphia City Controller’s Office.</span>
+            <span class="mt-2 block font-mono text-[12px] text-zinc-500">civic-indicators · public-dashboard · philadelphia</span>
+          </span>
+          <span class="arrow mt-1 font-mono text-ink opacity-0 transition-all">→</span>
+        </a>
+        <a href="#" class="rowlink flex items-start gap-4 py-4">
+          <span class="gutter mt-1 font-mono text-[12px] text-zinc-500">03</span>
+          <span class="flex-1">
+            <span class="rt block text-[17px] font-medium text-zinc-900 transition-colors">Geospatial Data Science in Python</span>
+            <span class="mt-1 block max-w-md text-[14.5px] leading-6 text-zinc-600">Course materials for a graduate course I taught at the University of Pennsylvania.</span>
+            <span class="mt-2 block font-mono text-[12px] text-zinc-500">teaching · python · geospatial · public-policy</span>
+          </span>
+          <span class="arrow mt-1 font-mono text-ink opacity-0 transition-all">→</span>
+        </a>
+        <a href="#" class="rowlink flex items-start gap-4 py-4">
+          <span class="gutter mt-1 font-mono text-[12px] text-zinc-500">04</span>
+          <span class="flex-1">
+            <span class="rt block text-[17px] font-medium text-zinc-900 transition-colors">Parking Jawn</span>
+            <span class="mt-1 block max-w-md text-[14.5px] leading-6 text-zinc-600">An older civic data project exploring parking violations in Philadelphia.</span>
+            <span class="mt-2 block font-mono text-[12px] text-zinc-500">archived · maps · civic-data</span>
+          </span>
+          <span class="arrow mt-1 font-mono text-ink opacity-0 transition-all">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Writing -->
+    <section id="writing" class="grid grid-cols-1 gap-x-6 gap-y-4 border-b border-zinc-200 py-12 md:grid-cols-[5rem_1fr]">
+      <div class="gutter font-mono text-[12px] text-zinc-500">§03<br /><span class="text-zinc-600">writing &amp; public&nbsp;data</span></div>
+      <div>
+        <p class="max-w-xl text-[16px] leading-8 text-zinc-600">Selected work for <span class="font-medium text-zinc-800">The Philadelphia Citizen</span>, including an op-ed on the Consumer Financial Protection Bureau and interactive data pieces on the Philadelphia and Pennsylvania budgets.</p>
+        <ul class="mt-6 divide-y divide-zinc-200 border-y border-zinc-200 font-mono text-[14px]">
+          <li><a href="#" class="wlink flex items-baseline justify-between gap-4 py-3"><span class="wt text-zinc-800">Who will protect you now?</span><span class="wm shrink-0 text-[12px] text-zinc-500">op-ed · cfpb</span></a></li>
+          <li><a href="#" class="wlink flex items-baseline justify-between gap-4 py-3"><span class="wt text-zinc-800">Philadelphia budget interactive</span><span class="wm shrink-0 text-[12px] text-zinc-500">dataviz · city</span></a></li>
+          <li><a href="#" class="wlink flex items-baseline justify-between gap-4 py-3"><span class="wt text-zinc-800">Pennsylvania budget interactive</span><span class="wm shrink-0 text-[12px] text-zinc-500">dataviz · state</span></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="grid grid-cols-1 gap-x-6 gap-y-4 py-12 md:grid-cols-[5rem_1fr]">
+      <div class="gutter font-mono text-[12px] text-zinc-500">§04<br /><span class="text-zinc-600">contact</span></div>
+      <div>
+        <p class="max-w-xl text-xl leading-8 text-zinc-800">Email is the best way to reach me.</p>
+        <a href="mailto:nicholas.adam.hand@gmail.com" class="ml mt-2 inline-block font-mono text-[15px] text-ink">nicholas.adam.hand@gmail.com</a>
+        <div class="mt-5 flex flex-wrap gap-2 font-mono text-[13px]">
+          <a href="#" class="ml rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:border-ink">github</a>
+          <a href="#" class="ml rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:border-ink">linkedin</a>
+          <a href="#" class="ml rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 hover:border-ink">resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-zinc-200">
+    <div class="mx-auto flex max-w-3xl flex-col items-center gap-2.5 px-6 py-7 font-mono text-[12px] text-zinc-500 sm:flex-row sm:justify-between sm:gap-4">
+      <span>nickhand.dev</span>
+      <span class="flex items-center gap-1.5">made near the Wissahickon <span class="phl-heart text-ink">&#9829;</span></span>
+      <span>last updated 2026</span>
+    </div>
+  </footer>
+
+  <!-- konami payoff: the output cell for In [42] -->
+  <div id="egg" class="pointer-events-none fixed inset-x-0 bottom-6 z-50 flex justify-center px-4">
+    <div class="pointer-events-auto flex max-w-md items-center gap-4 rounded-md border border-zinc-300 bg-white/95 px-4 py-3.5 font-mono text-[12px] leading-5 text-zinc-600 shadow-xl backdrop-blur">
+      <span id="egg-map" class="shrink-0" aria-hidden="true"></span>
+      <span class="flex-1">
+        <span class="text-ink">Out&nbsp;[42]:</span> you found it.
+        <br /><span class="text-zinc-400">271&nbsp;steps from the Wissahickon. say hi &rarr; <a href="mailto:nicholas.adam.hand@gmail.com" class="ml text-ink underline">email</a></span>
+      </span>
+      <button id="egg-x" class="shrink-0 self-start text-[14px] leading-none text-zinc-400 hover:text-zinc-700" aria-label="dismiss">×</button>
+    </div>
+  </div>
+
+  <script>
+    /* swallow the benign "ResizeObserver loop" browser notice so it doesn't surface as an error */
+    window.addEventListener('error', function (e) {
+      if (e && e.message && e.message.indexOf('ResizeObserver loop') !== -1) {
+        e.stopImmediatePropagation();
+        e.preventDefault();
+      }
+    });
+    /* a small easter egg for anyone who opens the console */
+    console.log(
+      "%cIn [42]: whoami",
+      "font:600 13px ui-monospace, monospace; color:#355f7d;"
+    );
+    console.log(
+      "%cNick Hand, PhD \u2014 technologist, data scientist, educator.\n" +
+      "You opened the console. Respectable.\n" +
+      "Most of the work here is public, and so is the data behind it.\n" +
+      "If you're reading this because you're hiring for civic or\n" +
+      "public-interest data work \u2014 say hi: nicholas.adam.hand@gmail.com",
+      "font:12px ui-monospace, monospace; color:#52525b; line-height:1.65;"
+    );
+
+    /* ---- Philadelphia map mark (baked from OpenDataPhilly city limits) ---- */
+    var GEO = window.PHL_GEO;
+    function phlSVG(height, opts){
+      opts = opts || {};
+      var w = (100 / GEO.h * height);
+      var sw = opts.stroke || 1.6;
+      var pr = opts.pin || 3.2;
+      var creek = opts.creek ? '<path class="phl-creek phl-draw" pathLength="1" stroke-width="'+(sw*0.75)+'" d="'+GEO.creek+'"/>' : '';
+      var pin = '<circle class="phl-pin" cx="'+GEO.pin[0]+'" cy="'+GEO.pin[1]+'" r="'+pr+'"/>';
+      return '<svg class="phl-svg" width="'+w.toFixed(1)+'" height="'+height+'" viewBox="'+GEO.vb+'" fill="none" xmlns="http://www.w3.org/2000/svg">'
+        + '<path class="phl-city phl-draw" pathLength="1" stroke-width="'+sw+'" d="'+GEO.city+'"/>'
+        + creek + pin + '</svg>';
+    }
+    function renderMap(el, height, opts){
+      if(!el) return;
+      el.innerHTML = phlSVG(height, opts);
+      // force reflow then trigger the draw
+      var svg = el.firstChild;
+      void svg.getBoundingClientRect();
+      requestAnimationFrame(function(){ svg.classList.add('phl-go'); });
+    }
+    // hero mark draws itself once, shortly after load
+    var heroMark = document.getElementById('phl-mark');
+    if (heroMark){
+      setTimeout(function(){ renderMap(heroMark, 40, {stroke:2, pin:4.4, creek:false}); }, 450);
+    }
+
+    /* konami code → reveal the Out [42] cell */
+    (function () {
+      var seq = ['arrowup','arrowup','arrowdown','arrowdown','arrowleft','arrowright','arrowleft','arrowright','b','a'];
+      var i = 0, t, egg = document.getElementById('egg');
+      function show() {
+        renderMap(document.getElementById('egg-map'), 116, {stroke:1.4, pin:2.8, creek:true});
+        egg.classList.add('show');
+        clearTimeout(t);
+        t = setTimeout(hide, 12000);
+      }
+      function hide() { egg.classList.remove('show'); }
+      document.getElementById('egg-x').addEventListener('click', hide);
+      window.addEventListener('keydown', function (e) {
+        var k = e.key.length === 1 ? e.key.toLowerCase() : e.key.toLowerCase();
+        if (k === seq[i]) { i++; if (i === seq.length) { i = 0; show(); } }
+        else { i = (k === seq[0]) ? 1 : 0; }
+      });
+    })();
+  </script>
+
+</body>
+</html>
