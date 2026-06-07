@@ -26,28 +26,36 @@
     </p>
     <p class="mt-4 max-w-xl text-[16px] leading-8 text-zinc-600">
       My work focuses on data, technology, and public accountability, especially
-      where technical systems affect people’s everyday lives.
+      where technical systems affect people's everyday lives.
     </p>
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
       <a
         :href="links.resume"
         aria-label="Resume (PDF)"
         class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+        @click="capture('resume_click', { section: 'hero' })"
         >resume</a
       >
       <a
         :href="links.github"
+        target="_blank"
+        rel="noopener noreferrer"
         class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+        @click="capture('contact_click', { method: 'github', section: 'hero' })"
         >github</a
       >
       <a
         :href="links.linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
         class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+        @click="capture('contact_click', { method: 'linkedin', section: 'hero' })"
         >linkedin</a
       >
       <a
         :href="links.email"
         class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+        @click="capture('contact_click', { method: 'email', section: 'hero' })"
         >email</a
       >
     </div>
@@ -58,6 +66,7 @@
 import { ref, onMounted } from "vue";
 import PhlMap from "./PhlMap.vue";
 import { links } from "../data/links";
+import { capture } from "../lib/analytics";
 
 const heroMap = ref<InstanceType<typeof PhlMap> | null>(null);
 

@@ -1,5 +1,6 @@
 <script setup>
 import { ref, nextTick, onMounted, onUnmounted } from "vue";
+import { capture } from "./lib/analytics";
 import SiteHeader from "./components/SiteHeader.vue";
 import HeroSection from "./components/HeroSection.vue";
 import AboutSection from "./components/AboutSection.vue";
@@ -27,6 +28,7 @@ const KONAMI = [
 let konamiIdx = 0;
 
 function revealEgg() {
+  capture('konami_found')
   showEgg.value = true;
   clearTimeout(eggTimer);
   eggTimer = setTimeout(dismissEgg, 12000);

@@ -26,3 +26,4 @@ dist-ssr
 design_handoff*
 CLAUDE*
 AGENTS* 
+.env*

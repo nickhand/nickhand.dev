@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "posthog-js": "^1.382.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {

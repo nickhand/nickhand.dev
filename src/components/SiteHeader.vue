@@ -10,8 +10,12 @@
         <a href="#work" class="transition-colors duration-[180ms] hover:text-ink">work</a>
         <a href="#writing" class="hidden transition-colors duration-[180ms] hover:text-ink sm:inline">writing</a>
         <a href="#contact" class="transition-colors duration-[180ms] hover:text-ink">contact</a>
-        <a href="/resume.pdf" aria-label="Resume (PDF)" class="text-ink">resume</a>
+        <a href="/resume.pdf" aria-label="Resume (PDF)" class="text-ink" @click="capture('resume_click', { section: 'header' })">resume</a>
       </nav>
     </div>
   </header>
 </template>
+
+<script setup lang="ts">
+import { capture } from '../lib/analytics'
+</script>
