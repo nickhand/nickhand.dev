@@ -13,11 +13,11 @@ export const writing: WritingItem[] = [
   {
     title: "Philadelphia FY27 budget interactive",
     href: "https://thephiladelphiacitizen.org/mayor-parker-2026-budget/",
-    meta: "dataviz · philadelphia · budget · fy2027",
+    meta: "dataviz · philadelphia",
   },
   {
     title: "Pennsylvania 2026-27 budget interactive",
     href: "https://thephiladelphiacitizen.org/pa-budget-2026/",
-    meta: "dataviz · pennsylvania · budget · fy2027",
+    meta: "dataviz · pennsylvania",
   },
 ];
