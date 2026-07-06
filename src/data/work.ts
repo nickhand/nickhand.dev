@@ -14,6 +14,13 @@ export const work: WorkItem[] = [
     meta: "public-data · geospatial · dataviz · philadelphia",
   },
   {
+    title: "Fair Measure Philadelphia",
+    href: "/fair-measure",
+    description:
+      "An independent assessment-integrity project that trains machine-learning models on public property records to flag likely over- and under-assessed homes and support appeals.",
+    meta: "machine-learning · public-data · property-assessment · philadelphia",
+  },
+  {
     title: "ProgressPHL",
     href: "https://controller.phila.gov/philadelphia-audits/progressphl/",
     description:
