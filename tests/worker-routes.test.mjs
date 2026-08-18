@@ -15,6 +15,33 @@ test("preserves the legacy dashboard proxy namespace", () => {
   )
 })
 
+test("redirects bare dashboard queries into the slash-subtree route", () => {
+  const route = resolveLegacyRoute(
+    "https://www.nickhand.dev/philly-gun-violence-map?year=2026",
+  )
+
+  assert.deepEqual(
+    { kind: route.kind, status: route.status, url: route.url.href },
+    {
+      kind: "redirect",
+      status: 301,
+      url: "https://www.nickhand.dev/philly-gun-violence-map/?year=2026",
+    },
+  )
+
+  const withoutQuery = resolveLegacyRoute(
+    "https://www.nickhand.dev/philly-gun-violence-map",
+  )
+  assert.deepEqual(
+    {
+      kind: withoutQuery.kind,
+      status: withoutQuery.status,
+      url: withoutQuery.url.href,
+    },
+    { kind: "redirect", status: 301, url: "https://www.nickhand.dev/philly-gun-violence-map/" },
+  )
+})
+
 test("preserves the Fair Measure proxy and redirects Parking Jawn", () => {
   assert.equal(
     resolveLegacyRoute("https://www.nickhand.dev/fair-measure/results").url.href,
@@ -43,7 +70,7 @@ test("redirects the former dashboard URL without capturing near matches", () => 
     {
       kind: "redirect",
       status: 301,
-      url: "https://www.nickhand.dev/philly-gun-violence-map?year=2026",
+      url: "https://www.nickhand.dev/philly-gun-violence-map/?year=2026",
     },
   )
   assert.equal(

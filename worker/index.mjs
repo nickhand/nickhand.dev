@@ -12,7 +12,13 @@ export function resolveLegacyRoute(requestUrl) {
   const url = new URL(requestUrl)
 
   if (url.pathname === "/mapping-gun-violence") {
-    const target = new URL("/philly-gun-violence-map", url)
+    const target = new URL("/philly-gun-violence-map/", url)
+    target.search = url.search
+    return { kind: "redirect", status: 301, url: target }
+  }
+
+  if (url.pathname === "/philly-gun-violence-map") {
+    const target = new URL("/philly-gun-violence-map/", url)
     target.search = url.search
     return { kind: "redirect", status: 301, url: target }
   }
