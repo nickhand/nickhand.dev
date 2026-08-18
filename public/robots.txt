@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.nickhand.dev/sitemap.xml
+Sitemap: https://www.nickhand.dev/philly-gun-violence-map/sitemap.xml

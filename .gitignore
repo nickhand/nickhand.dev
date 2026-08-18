@@ -27,4 +27,6 @@ design_handoff*
 CLAUDE*
 AGENTS* 
 .env*
+!.env.example
+.wrangler/
 .claude*
