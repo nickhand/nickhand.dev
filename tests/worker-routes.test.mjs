@@ -42,11 +42,41 @@ test("redirects bare dashboard queries into the slash-subtree route", () => {
   )
 })
 
-test("preserves the Fair Measure proxy and redirects Parking Jawn", () => {
-  assert.equal(
-    resolveLegacyRoute("https://www.nickhand.dev/fair-measure/results").url.href,
-    "https://philly-fair-measure.netlify.app/fair-measure/results",
+test("redirects bare Fair Measure requests into its slash-subtree route", () => {
+  const withQuery = resolveLegacyRoute(
+    "https://www.nickhand.dev/fair-measure?source=work",
   )
+  assert.deepEqual(
+    { kind: withQuery.kind, status: withQuery.status, url: withQuery.url.href },
+    {
+      kind: "redirect",
+      status: 301,
+      url: "https://www.nickhand.dev/fair-measure/?source=work",
+    },
+  )
+
+  const withoutQuery = resolveLegacyRoute(
+    "https://www.nickhand.dev/fair-measure",
+  )
+  assert.deepEqual(
+    {
+      kind: withoutQuery.kind,
+      status: withoutQuery.status,
+      url: withoutQuery.url.href,
+    },
+    { kind: "redirect", status: 301, url: "https://www.nickhand.dev/fair-measure/" },
+  )
+})
+
+test("preserves the Fair Measure rollback proxy without capturing near matches", () => {
+  assert.equal(
+    resolveLegacyRoute("https://www.nickhand.dev/fair-measure/results?x=1").url.href,
+    "https://philly-fair-measure.netlify.app/fair-measure/results?x=1",
+  )
+  assert.equal(resolveLegacyRoute("https://www.nickhand.dev/fair-measured"), null)
+})
+
+test("redirects Parking Jawn to its canonical standalone site", () => {
   const parking = resolveLegacyRoute(
     "https://www.nickhand.dev/parking-jawn?source=work",
   )

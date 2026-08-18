@@ -30,6 +30,12 @@ export function resolveLegacyRoute(requestUrl) {
     }
   }
 
+  if (url.pathname === "/fair-measure") {
+    const target = new URL("/fair-measure/", url)
+    target.search = url.search
+    return { kind: "redirect", status: 301, url: target }
+  }
+
   if (matchesPath(url.pathname, "/fair-measure")) {
     return {
       kind: "proxy",
