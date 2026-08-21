@@ -17,13 +17,12 @@ deliberately omit analytics and return `X-Robots-Tag: noindex, nofollow`.
 
 ## Cloudflare deployment
 
-The site deploys as a Worker with static assets. A small Worker entrypoint keeps
-the existing Netlify status-200 proxy working for Fair Measure. The Philadelphia
-gun-violence dashboard is owned by its dedicated Cloudflare Worker on the more
-specific `/philly-gun-violence-map` routes; rollback uses a retained version of
-that Worker rather than a Netlify origin. The archived `/parking-jawn` path
-permanently redirects to its canonical standalone domain; proxying it would
-break its root-relative asset URLs.
+The site deploys as a Worker with static assets. Fair Measure and the Philadelphia
+gun-violence dashboard are owned by dedicated Cloudflare Workers on the more
+specific `/fair-measure` and `/philly-gun-violence-map` routes. Each application
+rolls back to a retained Worker version rather than a Netlify origin. The archived
+`/parking-jawn` path permanently redirects to its canonical standalone domain;
+proxying it would break its root-relative asset URLs.
 
 ```bash
 npm run dry-run:cloudflare:staging
@@ -33,5 +32,4 @@ npm run deploy:cloudflare:staging
 Before `deploy:cloudflare:production`, run `npm run check`, capture the active
 Worker version as the rollback target, and verify the apex redirect preserves
 every path and query string at `www`. The production `VITE_POSTHOG_KEY` must be
-present in the build environment. The Fair Measure Netlify origin remains a
-separate rollback dependency until its own retirement is complete.
+present in the build environment.

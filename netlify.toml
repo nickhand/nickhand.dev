@@ -23,15 +23,3 @@ status = 301
 from = "/mapping-gun-violence"
 to = "/philly-gun-violence-map"
 status = 301
-
-[[redirects]]
-from = "/fair-measure"
-to = "https://philly-fair-measure.netlify.app/fair-measure/"
-force = true
-status = 200
-
-[[redirects]]
-from = "/fair-measure/*"
-to = "https://philly-fair-measure.netlify.app/fair-measure/:splat"
-force = true
-status = 200

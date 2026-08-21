@@ -75,12 +75,19 @@ test("redirects bare Fair Measure requests into its slash-subtree route", () => 
   )
 })
 
-test("preserves the Fair Measure rollback proxy without capturing near matches", () => {
-  assert.equal(
-    resolveLegacyRoute("https://www.nickhand.dev/fair-measure/results?x=1").url.href,
-    "https://philly-fair-measure.netlify.app/fair-measure/results?x=1",
-  )
+test("leaves the Fair Measure subtree to Cloudflare route ownership", async () => {
+  const requestUrl = "https://www.nickhand.dev/fair-measure/results?x=1"
+  assert.equal(resolveLegacyRoute(requestUrl), null)
   assert.equal(resolveLegacyRoute("https://www.nickhand.dev/fair-measured"), null)
+
+  const assets = {
+    fetch: async (request) => new Response(new URL(request.url).pathname),
+  }
+  const response = await worker.fetch(new Request(requestUrl), {
+    ASSETS: assets,
+    INDEXABLE: "true",
+  })
+  assert.equal(await response.text(), "/fair-measure/results")
 })
 
 test("redirects Parking Jawn to its canonical standalone site", () => {

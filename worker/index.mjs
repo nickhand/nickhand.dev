@@ -1,11 +1,4 @@
-const LEGACY_ORIGINS = Object.freeze({
-  fairMeasure: "https://philly-fair-measure.netlify.app",
-  parkingJawn: "https://www.parkingjawn.com",
-})
-
-function matchesPath(pathname, root) {
-  return pathname === root || pathname.startsWith(`${root}/`)
-}
+const PARKING_JAWN_ORIGIN = "https://www.parkingjawn.com"
 
 export function resolveLegacyRoute(requestUrl) {
   const url = new URL(requestUrl)
@@ -28,15 +21,8 @@ export function resolveLegacyRoute(requestUrl) {
     return { kind: "redirect", status: 301, url: target }
   }
 
-  if (matchesPath(url.pathname, "/fair-measure")) {
-    return {
-      kind: "proxy",
-      url: new URL(`${url.pathname}${url.search}`, LEGACY_ORIGINS.fairMeasure),
-    }
-  }
-
   if (url.pathname === "/parking-jawn") {
-    const target = new URL("/", LEGACY_ORIGINS.parkingJawn)
+    const target = new URL("/", PARKING_JAWN_ORIGIN)
     target.search = url.search
     return { kind: "redirect", status: 301, url: target }
   }
@@ -78,9 +64,7 @@ export default {
       )
     }
 
-    const response = route
-      ? await fetch(new Request(route.url, request))
-      : await env.ASSETS.fetch(request)
+    const response = await env.ASSETS.fetch(request)
 
     return addResponseHeaders(response, request.url, env.INDEXABLE === "true")
   },
