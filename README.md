@@ -18,25 +18,20 @@ deliberately omit analytics and return `X-Robots-Tag: noindex, nofollow`.
 ## Cloudflare deployment
 
 The site deploys as a Worker with static assets. A small Worker entrypoint keeps
-the existing Netlify status-200 proxies working for Fair Measure and the legacy
-Philadelphia gun-violence dashboard. Keeping the dashboard proxy in this
-main-site Worker provides the rollback origin after the new dashboard Worker
-takes over the more specific `/philly-gun-violence-map` routes. The archived
-`/parking-jawn` path permanently redirects to its canonical standalone domain;
-proxying it would break its root-relative asset URLs.
+the existing Netlify status-200 proxy working for Fair Measure. The Philadelphia
+gun-violence dashboard is owned by its dedicated Cloudflare Worker on the more
+specific `/philly-gun-violence-map` routes; rollback uses a retained version of
+that Worker rather than a Netlify origin. The archived `/parking-jawn` path
+permanently redirects to its canonical standalone domain; proxying it would
+break its root-relative asset URLs.
 
 ```bash
 npm run dry-run:cloudflare:staging
 npm run deploy:cloudflare:staging
 ```
 
-Do not run `deploy:cloudflare:production` until:
-
-1. the complete Netlify DNS zone and build settings have been exported;
-2. Cloudflare is authoritative for `nickhand.dev`;
-3. the `www` Netlify DNS records are ready to be replaced by the Worker custom
-   domain; and
-4. a Cloudflare redirect preserves every apex path and query string at `www`.
-
-The production `VITE_POSTHOG_KEY` must be present in the build environment.
-Keep the Netlify sites available throughout the rollback window.
+Before `deploy:cloudflare:production`, run `npm run check`, capture the active
+Worker version as the rollback target, and verify the apex redirect preserves
+every path and query string at `www`. The production `VITE_POSTHOG_KEY` must be
+present in the build environment. The Fair Measure Netlify origin remains a
+separate rollback dependency until its own retirement is complete.

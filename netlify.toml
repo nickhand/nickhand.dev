@@ -13,43 +13,11 @@
   status = 301
   force = true
 
-# Dynamic dashboard pages bypass the nested Netlify proxy and go straight to
-# the API. Netlify supports only one proxy rewrite hop per request.
-[[redirects]]
-from = "/philly-gun-violence-map/stats"
-to = "https://philly-gun-violence-dashboard-api.fly.dev/stats"
-force = true
-status = 200
-
-[[redirects]]
-from = "/philly-gun-violence-map/stats/"
-to = "https://philly-gun-violence-dashboard-api.fly.dev/stats"
-force = true
-status = 200
-
-[[redirects]]
-from = "/philly-gun-violence-map/sitemap.xml"
-to = "https://philly-gun-violence-dashboard-api.fly.dev/sitemap.xml"
-force = true
-status = 200
-
 [[redirects]]
 from = "/parking-jawn"
 to = "https://www.parkingjawn.com/"
 force = true
 status = 301
-
-[[redirects]]
-from = "/philly-gun-violence-map"
-to = "https://phillygunviolence.netlify.app/philly-gun-violence-map/"
-force = true
-status = 200
-
-[[redirects]]
-from = "/philly-gun-violence-map/*"
-to = "https://phillygunviolence.netlify.app/philly-gun-violence-map/:splat"
-force = true
-status = 200
 
 [[redirects]]
 from = "/mapping-gun-violence"

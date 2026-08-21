@@ -3,16 +3,23 @@ import test from "node:test"
 
 import worker, { resolveLegacyRoute } from "../worker/index.mjs"
 
-test("preserves the legacy dashboard proxy namespace", () => {
+test("leaves dashboard subtree requests to Cloudflare route ownership", async () => {
   const route = resolveLegacyRoute(
     "https://www.nickhand.dev/philly-gun-violence-map/data?year=2026",
   )
 
-  assert.equal(route.kind, "proxy")
-  assert.equal(
-    route.url.href,
-    "https://phillygunviolence.netlify.app/philly-gun-violence-map/data?year=2026",
+  assert.equal(route, null)
+
+  const assets = {
+    fetch: async (request) => new Response(new URL(request.url).pathname),
+  }
+  const response = await worker.fetch(
+    new Request(
+      "https://www.nickhand.dev/philly-gun-violence-map/data?year=2026",
+    ),
+    { ASSETS: assets, INDEXABLE: "true" },
   )
+  assert.equal(await response.text(), "/philly-gun-violence-map/data")
 })
 
 test("redirects bare dashboard queries into the slash-subtree route", () => {

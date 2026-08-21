@@ -1,5 +1,4 @@
 const LEGACY_ORIGINS = Object.freeze({
-  dashboard: "https://phillygunviolence.netlify.app",
   fairMeasure: "https://philly-fair-measure.netlify.app",
   parkingJawn: "https://www.parkingjawn.com",
 })
@@ -21,13 +20,6 @@ export function resolveLegacyRoute(requestUrl) {
     const target = new URL("/philly-gun-violence-map/", url)
     target.search = url.search
     return { kind: "redirect", status: 301, url: target }
-  }
-
-  if (matchesPath(url.pathname, "/philly-gun-violence-map")) {
-    return {
-      kind: "proxy",
-      url: new URL(`${url.pathname}${url.search}`, LEGACY_ORIGINS.dashboard),
-    }
   }
 
   if (url.pathname === "/fair-measure") {
