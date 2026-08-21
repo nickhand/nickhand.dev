@@ -15,6 +15,12 @@ npm run check
 to `.env.local` for a local production-analytics build. Cloudflare staging builds
 deliberately omit analytics and return `X-Robots-Tag: noindex, nofollow`.
 
+The production sitemap is generated during every build. Its `lastmod` is the
+latest Git commit date that changed meaningful homepage copy, links, or
+search-facing images. Documentation, tests, analytics, deployment, and routing
+changes do not claim that the public page changed, and builds fail closed when
+that history is unavailable.
+
 ## Cloudflare deployment
 
 The site deploys as a Worker with static assets. Fair Measure and the Philadelphia

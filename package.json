@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint src/ worker/ tests/",
+    "lint": "eslint src/ worker/ scripts/ tests/",
     "test": "node --test",
     "check": "npm run lint && npm test && npm run build",
     "build:cloudflare:staging": "VITE_POSTHOG_KEY= vite build",
