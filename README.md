@@ -21,6 +21,21 @@ search-facing images. Documentation, tests, analytics, deployment, and routing
 changes do not claim that the public page changed, and builds fail closed when
 that history is unavailable.
 
+## Resume
+
+Edit `resume/resume.json`, then regenerate the downloadable PDF:
+
+```bash
+python3 -m pip install -r resume/requirements.txt
+python3 scripts/build_resume.py
+```
+
+The generator uses Calibri regular and bold fonts from a local Microsoft Office
+installation. On another machine, pass `--font-dir /path/to/calibri/fonts`.
+The fonts are not included in this repository. The checked-in `public/resume.pdf`
+is served as-is; website builds do not require Python or these fonts.
+Review both PDF pages after regenerating to check wrapping and page breaks.
+
 ## Cloudflare deployment
 
 The site deploys as a Worker with static assets. Fair Measure and the Philadelphia

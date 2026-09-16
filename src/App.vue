@@ -61,10 +61,9 @@ onMounted(() => {
     "font:600 13px ui-monospace, monospace; color:#355f7d;",
   );
   console.log(
-    "%cNick Hand, PhD — technologist, data scientist, educator.\n" +
+    "%cNick Hand, PhD — public servant, technologist, data scientist, educator.\n" +
       "Most of the work here is public, and so is the data behind it.\n" +
-      "If you're hiring for civic or public-interest data work —\n" +
-      "or just building something good — the door's open.\n\n" +
+      "If you're building something for the public good, say hello.\n\n" +
       "%cSpeak, friend, and enter → nicholas.adam.hand@gmail.com",
     "font:12px ui-monospace, monospace; color:#52525b; line-height:1.65;",
     "font:600 12px ui-monospace, monospace; color:#355f7d; line-height:1.65;",

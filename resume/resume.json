@@ -1,0 +1,92 @@
+{
+  "name": "Nick Hand, PhD",
+  "tagline": "Public Servant  |  Consumer Protection  |  Technology & Data",
+  "links": [
+    { "label": "nickhand.dev", "url": "https://www.nickhand.dev/" },
+    { "label": "linkedin.com/in/nickhandphl", "url": "https://www.linkedin.com/in/nickhandphl" },
+    { "label": "github.com/nickhand", "url": "https://github.com/nickhand" }
+  ],
+  "summary": "Public servant protecting consumers, with expertise in technology, data science, and public policy. PhD in astrophysics with more than a decade of Python experience across the modern data science toolkit. Background spans AI/ML policy, data privacy, algorithmic bias, and civic data, with experience leading technical teams, building widely used interactive data visualizations, and communicating complex findings to executive and public audiences.",
+  "expertise": [
+    "Python and the modern data science toolkit (10+ years), including advanced statistical analysis and AI/ML algorithms",
+    "Geospatial analysis techniques and GIS software tools",
+    "Data visualization and frontend web development (JavaScript, TypeScript, HTML, CSS, Vue)",
+    "Consumer protection law and technology in the financial services sector",
+    "Technology policy: AI/ML, ad tech, data privacy and surveillance, and algorithmic bias",
+    "Designing, executing, and managing data-driven research projects and technical products",
+    "Leading technical teams to deliver results on tight timelines",
+    "Communicating and presenting complex technical findings to non-technical, executive, and public audiences"
+  ],
+  "experience": [
+    {
+      "title": "Senior AI Policy and Technology Fellow",
+      "organization": "Delaware Attorney General's Office",
+      "division": "Fraud and Consumer Protection Division",
+      "dates": "September 2026 - Present",
+      "bullets": []
+    },
+    {
+      "title": "Senior Analytics Manager",
+      "organization": "Voyatek",
+      "dates": "April 2025 - September 2026",
+      "bullets": [
+        "Led a team of five analysts developing data engineering and analytics solutions for the Internal Revenue Service as part of anti-money laundering compliance exams."
+      ]
+    },
+    {
+      "title": "Enforcement Technologist",
+      "organization": "Consumer Financial Protection Bureau (CFPB)",
+      "dates": "September 2023 - April 2025",
+      "bullets": [
+        "Key contributor to the Enforcement Division technologist team that developed new case investigations, provided key insights to cross-functional case teams on a range of technology topics, and identified new opportunities for improving operational efficiency.",
+        "Identified and developed technical strategies to achieve CFPB goals related to AI and machine learning, algorithmic bias, and data security by researching, developing, and pitching new cases in those priority areas.",
+        "Led cross-Bureau collaborations on data security and contributed to cross-functional work products on AI/ML underwriting and data privacy policy issues."
+      ]
+    },
+    {
+      "title": "Lecturer, Master of Urban Spatial Analytics",
+      "organization": "University of Pennsylvania",
+      "dates": "September 2019 - January 2024",
+      "new_page": true,
+      "bullets": [
+        "Taught the <a href=\"https://musa-550-fall-2023.github.io/\">Geospatial Data Science in Python</a> course once per school year in the Master of Urban Spatial Analytics (MUSA) program in the Weitzman School.",
+        "Developed the course curriculum from scratch, covering a wide range of data visualization, data science, and machine learning techniques using a Python stack with real-world case studies in urban planning and public policy."
+      ]
+    },
+    {
+      "title": "Director of Finance, Policy, and Data",
+      "organization": "City Controller's Office, City of Philadelphia",
+      "dates": "February 2018 - September 2023",
+      "bullets": [
+        "Led a team producing data-driven policy reports focused on fraud, waste, and abuse in the City of Philadelphia, including property tax assessments, gun violence, spending, budget, and taxes.",
+        "Designed, developed, and deployed multiple custom interactive data visualizations, including a <a href=\"https://www.nickhand.dev/philly-gun-violence-map/\">Gun Violence Dashboard</a> (thousands of monthly views) and the <a href=\"https://controller.phila.gov/philadelphia-audits/progressphl/\">ProgressPHL</a> neighborhood well-being dashboard."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "University of California, Berkeley",
+      "organization": "PhD in Astrophysics",
+      "dates": "2017",
+      "bullets": [
+        "Co-authored papers with thousands of citations, including six first-author papers (more than 700 citations).",
+        "DOE Office of Science Research Fellow.",
+        "National Science Foundation Graduate Research Fellow."
+      ]
+    },
+    {
+      "title": "Princeton University",
+      "organization": "Bachelor of Arts in Astrophysics, Certificate of Computing",
+      "dates": "2011",
+      "bullets": [
+        "Graduated summa cum laude; elected to Phi Beta Kappa.",
+        "Thesis work recognized as a top 10 physics breakthrough of 2012 by Physics World."
+      ]
+    }
+  ],
+  "activities": [
+    "<a href=\"https://thephiladelphiacitizen.org/author/nick-hand/\">Guest contributor</a>, The Philadelphia Citizen.",
+    "Mentor, inaugural Harvard Climate Justice Design Fellowship (Class of 2022).",
+    "Keepers Program, Leadership Philadelphia (Class of 2022)."
+  ]
+}

@@ -22,11 +22,11 @@
       Nick Hand<span class="text-ink">, PhD</span>
     </h1>
     <p class="mt-3 max-w-xl text-xl leading-8 text-zinc-700">
-      Technologist, data scientist, and educator based in Philadelphia.
+      A public servant protecting consumers.
     </p>
     <p class="mt-4 max-w-xl text-[16px] leading-8 text-zinc-600">
-      My work focuses on data, technology, and public accountability, especially
-      where technical systems affect people's everyday lives.
+      My expertise is in technology, data science, and public policy.
+      I care about making government work better for the people it serves.
     </p>
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
       <a
