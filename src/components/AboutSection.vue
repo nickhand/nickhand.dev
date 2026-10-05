@@ -8,12 +8,11 @@
     </div>
     <div>
       <p class="max-w-xl text-[16px] leading-8 text-zinc-700">
-        I run Wissahickon Analytics, my applied data science consultancy for
-        governments, newsrooms and civic organizations. If you have a project in mind,
+        I also take on consulting projects through Wissahickon Analytics. You can
         <a
           href="#consulting"
           class="text-ink underline decoration-zinc-300 underline-offset-4 transition-colors hover:decoration-ink"
-          >explore my consulting work</a
+          >read about my consulting work</a
         >.
       </p>
       <p class="mt-4 max-w-xl text-[16px] leading-8 text-zinc-600">
