@@ -31,7 +31,7 @@ export const work: WorkItem[] = [
     title: "Geospatial Data Science in Python",
     href: "https://musa-550-fall-2023.github.io/",
     description:
-      "Course materials for a graduate course I taught at the University of Pennsylvania.",
+      "Curriculum and materials for the Python geospatial data science course I developed and taught in Penn’s Master of Urban Spatial Analytics program.",
     meta: "teaching · python · geospatial · public-policy",
   },
   {

@@ -16,9 +16,10 @@
         >.
       </p>
       <p class="mt-4 max-w-xl text-[16px] leading-8 text-zinc-600">
+        I developed and taught Geospatial Data Science in Python in the
+        University of Pennsylvania’s Master of Urban Spatial Analytics program.
         I started my career in astrophysics, earning a PhD from UC&nbsp;Berkeley
-        and a BA from Princeton. I also taught graduate-level geospatial data
-        science in Python at the University of Pennsylvania.
+        and a BA from Princeton.
       </p>
     </div>
   </section>
