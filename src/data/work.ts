@@ -10,7 +10,7 @@ export const work: WorkItem[] = [
     title: "Mapping Philadelphia's Gun Violence",
     href: "/philly-gun-violence-map",
     description:
-      "Interactive public data dashboard tracking shootings using public records, geospatial analysis, and web-based visualization.",
+      "Interactive dashboard I built at Philadelphia’s City Controller’s Office and now maintain independently, combining public records, geospatial analysis, maps and charts.",
     meta: "public-data · geospatial · dataviz · philadelphia",
   },
   {
