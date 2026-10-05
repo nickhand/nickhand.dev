@@ -4,6 +4,7 @@ import { capture } from "./lib/analytics";
 import SiteHeader from "./components/SiteHeader.vue";
 import HeroSection from "./components/HeroSection.vue";
 import AboutSection from "./components/AboutSection.vue";
+import ConsultingSection from "./components/ConsultingSection.vue";
 import SelectedWork from "./components/SelectedWork.vue";
 import WritingSection from "./components/WritingSection.vue";
 import ContactSection from "./components/ContactSection.vue";
@@ -86,6 +87,7 @@ onUnmounted(() => {
     <main id="main-content" class="mx-auto max-w-3xl px-6">
       <HeroSection />
       <SelectedWork />
+      <ConsultingSection />
       <AboutSection />
       <WritingSection />
       <ContactSection />

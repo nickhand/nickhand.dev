@@ -8,14 +8,12 @@
     </div>
     <div>
       <p class="max-w-xl text-[16px] leading-8 text-zinc-700">
-        I also run Wissahickon Analytics, where I help local governments analyze
-        their data and build interactive tools for the public. If you have a
-        project in mind,
+        I run Wissahickon Analytics, my applied data science consultancy for
+        governments, newsrooms and civic organizations. If you have a project in mind,
         <a
-          :href="links.email"
+          href="#consulting"
           class="text-ink underline decoration-zinc-300 underline-offset-4 transition-colors hover:decoration-ink"
-          @click="capture('contact_click', { method: 'email', section: 'about' })"
-          >get in touch</a
+          >explore my consulting work</a
         >.
       </p>
       <p class="mt-4 max-w-xl text-[16px] leading-8 text-zinc-600">
@@ -26,8 +24,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import { links } from "../data/links";
-import { capture } from "../lib/analytics";
-</script>
