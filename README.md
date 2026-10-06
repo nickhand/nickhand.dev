@@ -84,7 +84,7 @@ Worker versions and routes and are not rolled back by this command.
 
 The subsequent homepage review removed the repeated About section, retained its
 education sentence in the hero, aligned the consulting section with the existing
-section grid, and shared the outlined action-link style. Source `95cad65` is live
+section grid, and shared the outlined action-link style. Source `95cad65` was deployed
 in production version `6d3e395d-cc8c-42a6-957b-cc1940722b70`; the immediately preceding
 version is `4a9397e8-6388-4c62-a7ad-0de71894dbfc` (same layout, before the map's
 reduced-motion correction). The original consulting layout remains available as
@@ -94,3 +94,11 @@ The redirect certificate was issued October 5, 2026, and currently expires
 January 3, 2027; Netlify manages renewal. Both HTTP and HTTPS on the apex and www
 hosts were verified, including legacy paths and query strings. Browser navigation
 from the firm domain lands at the consulting section beneath the sticky header.
+
+The latest October 5 revision shortens the opening to two equally sized paragraphs
+(18px desktop, 17px mobile) and orders the page: introduction, consulting, selected
+work, writing, contact. Degrees remain in the résumé. Source `6a840b2` is live in
+Worker version `00b679c4-417a-4c47-ba28-5a4470d7808e`. The preceding version,
+`72c6cc2b-8113-4c36-a2cf-f30611412ec9`, retains the shorter introduction with the
+portfolio before consulting. Lint, ten tests, production build, desktop/mobile
+inspection and the live bundle/section order were verified.
