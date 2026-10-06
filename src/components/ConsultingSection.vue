@@ -9,7 +9,7 @@ const contact = 'mailto:nick@wissahickonanalytics.com?subject=Project%20inquiry'
     <p class="font-mono text-[12px] text-ink">Wissahickon Analytics</p>
     <h2 id="consulting-heading" class="mt-3 max-w-xl text-2xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-3xl">Data analysis and custom software</h2>
     <p class="mt-5 max-w-xl text-[16px] leading-8 text-zinc-700">I’m a data scientist and software developer. Through Wissahickon Analytics, I help organizations answer questions with data and build tools their staff or the public can use. I work on the analysis, the underlying data systems, and the application people interact with.</p>
-    <p class="mt-4 max-w-xl text-[15px] leading-7 text-zinc-600">I like working on hard problems, especially when the result is something people can use. I’m particularly interested in making budget data more accessible and helping government deliver better services.</p>
+    <p class="mt-4 max-w-xl text-[15px] leading-7 text-zinc-600">I like working on hard problems, especially when the work helps people understand an issue or improves how a public service works. I’m particularly interested in making budget data more accessible and helping government deliver better services.</p>
     <div class="mt-7 max-w-2xl text-[15px] leading-7 text-zinc-600">
       <p class="font-medium text-zinc-900">My work has included:</p>
       <ul class="mt-3 list-disc space-y-3 pl-5 marker:text-ink/60">
