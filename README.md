@@ -81,3 +81,16 @@ npx wrangler rollback 62eb8765-59ea-49ac-befd-12af714a8c71 --env production
 That rollback predates the consulting section, so coordinate the redirect
 if restoring it. Fair Measure and the gun-violence dashboard have independent
 Worker versions and routes and are not rolled back by this command.
+
+The subsequent homepage review removed the repeated About section, retained its
+education sentence in the hero, aligned the consulting section with the existing
+section grid, and shared the outlined action-link style. Source `95cad65` is live
+in production version `6d3e395d-cc8c-42a6-957b-cc1940722b70`; the immediately preceding
+version is `4a9397e8-6388-4c62-a7ad-0de71894dbfc` (same layout, before the map's
+reduced-motion correction). The original consulting layout remains available as
+version `7e3b683e-1f94-4ed1-9e50-eea481595772`.
+
+The redirect certificate was issued October 5, 2026, and currently expires
+January 3, 2027; Netlify manages renewal. Both HTTP and HTTPS on the apex and www
+hosts were verified, including legacy paths and query strings. Browser navigation
+from the firm domain lands at the consulting section beneath the sticky header.
