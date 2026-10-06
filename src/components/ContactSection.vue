@@ -16,7 +16,7 @@
           :href="links.github"
           target="_blank"
           rel="noopener noreferrer"
-          class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+          class="action-link"
           @click="capture('contact_click', { method: 'github', section: 'contact' })"
           >github</a
         >
@@ -24,13 +24,13 @@
           :href="links.linkedin"
           target="_blank"
           rel="noopener noreferrer"
-          class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+          class="action-link"
           @click="capture('contact_click', { method: 'linkedin', section: 'contact' })"
           >linkedin</a
         >
         <a
           :href="links.resume"
-          class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+          class="action-link"
           @click="capture('resume_click', { section: 'contact' })"
           >resume</a
         >

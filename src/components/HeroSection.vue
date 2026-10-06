@@ -1,5 +1,5 @@
 <template>
-  <section class="border-b border-zinc-200 py-14">
+  <section id="about" class="border-b border-zinc-200 py-14">
     <div
       class="mb-6 flex items-center gap-3 font-mono text-[12px] text-zinc-500"
     >
@@ -43,11 +43,15 @@
       >, a model for fairer, more transparent property assessments, built entirely
       from public data.
     </p>
+    <p class="mt-4 max-w-2xl text-[15px] leading-7 text-zinc-600">
+      I started my career in astrophysics, earning a PhD from UC&nbsp;Berkeley
+      and a BA from Princeton.
+    </p>
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
       <a
         :href="links.resume"
         aria-label="Resume (PDF)"
-        class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+        class="action-link"
         @click="capture('resume_click', { section: 'hero' })"
         >resume</a
       >
@@ -55,7 +59,7 @@
         :href="links.github"
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+        class="action-link"
         @click="capture('contact_click', { method: 'github', section: 'hero' })"
         >github</a
       >
@@ -63,13 +67,13 @@
         :href="links.linkedin"
         target="_blank"
         rel="noopener noreferrer"
-        class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+        class="action-link"
         @click="capture('contact_click', { method: 'linkedin', section: 'hero' })"
         >linkedin</a
       >
       <a
         :href="links.email"
-        class="rounded-sm border border-zinc-300 px-3 py-1.5 text-zinc-700 transition-colors duration-[180ms] hover:border-ink"
+        class="action-link"
         @click="capture('contact_click', { method: 'email', section: 'hero' })"
         >email</a
       >

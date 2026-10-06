@@ -3,7 +3,6 @@ import { ref, nextTick, onMounted, onUnmounted } from "vue";
 import { capture } from "./lib/analytics";
 import SiteHeader from "./components/SiteHeader.vue";
 import HeroSection from "./components/HeroSection.vue";
-import AboutSection from "./components/AboutSection.vue";
 import ConsultingSection from "./components/ConsultingSection.vue";
 import SelectedWork from "./components/SelectedWork.vue";
 import WritingSection from "./components/WritingSection.vue";
@@ -88,7 +87,6 @@ onUnmounted(() => {
       <HeroSection />
       <SelectedWork />
       <ConsultingSection />
-      <AboutSection />
       <WritingSection />
       <ContactSection />
     </main>

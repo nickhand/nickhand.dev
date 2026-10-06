@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .action-link {
+    @apply inline-flex rounded-sm border border-zinc-300 px-3 py-1.5 font-mono text-[13px] text-zinc-700 transition-colors duration-[180ms] hover:border-ink;
+  }
+}
+
+main[id], section[id] {
+  scroll-margin-top: 6rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,6 +33,7 @@ html {
 @keyframes phldraw { to { stroke-dashoffset: 0; } }
 @keyframes phlpin { from { opacity: 0; transform: scale(0); } to { opacity: 1; transform: scale(1); } }
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   .phl-draw { stroke-dashoffset: 0; }
   .phl-pin { opacity: 1; animation: none; }
 }
