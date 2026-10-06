@@ -29,11 +29,11 @@
         people.
       </p>
     </div>
-    <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
+    <div class="mt-7 grid grid-cols-2 gap-2 font-mono text-[13px] sm:flex sm:flex-wrap">
       <a
         :href="links.resume"
         aria-label="Resume (PDF)"
-        class="action-link"
+        class="action-link justify-center"
         @click="capture('resume_click', { section: 'hero' })"
         >resume.pdf</a
       >
@@ -41,7 +41,7 @@
         :href="links.github"
         target="_blank"
         rel="noopener noreferrer"
-        class="action-link"
+        class="action-link justify-center"
         @click="capture('contact_click', { method: 'github', section: 'hero' })"
         >github</a
       >
@@ -49,13 +49,13 @@
         :href="links.linkedin"
         target="_blank"
         rel="noopener noreferrer"
-        class="action-link"
+        class="action-link justify-center"
         @click="capture('contact_click', { method: 'linkedin', section: 'hero' })"
         >linkedin</a
       >
       <a
         :href="links.email"
-        class="action-link"
+        class="action-link justify-center"
         @click="capture('contact_click', { method: 'email', section: 'hero' })"
         >email</a
       >
