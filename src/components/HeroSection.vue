@@ -30,8 +30,7 @@
       <p>
         Before that, I was an enforcement technologist at the Consumer Financial
         Protection Bureau, where I worked on investigations involving AI,
-        algorithmic bias and data security. Public cases I worked on include
-        matters involving Zelle and Meta. Earlier, I was
+        algorithmic bias and data security. Earlier, I was
         director of finance, policy and data in Philadelphia’s City
         Controller’s Office.
       </p>
