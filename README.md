@@ -121,7 +121,7 @@ Worker version `00b679c4-417a-4c47-ba28-5a4470d7808e`. The preceding version,
 portfolio before consulting. Lint, ten tests, production build, desktop/mobile
 inspection and the live bundle/section order were verified.
 
-The current SEO/rendering release is source `001db41`, production Worker version
+The SEO/rendering release is source `001db41`, production Worker version
 `6948681c-0f73-4a15-a614-a0e5ae7b9f83`. Its immediate rollback target is
 `00b679c4-417a-4c47-ba28-5a4470d7808e` (the same layout before static rendering).
 Staging version `9cd09870-28af-4c70-bdd5-2d4c3e0c09b0` was checked first. Lint,
@@ -133,3 +133,20 @@ apps and all three sitemaps remain available. Production has no noindex header;
 staging retains noindex. Public probes using Googlebot, OAI-SearchBot,
 Claude-SearchBot, and PerplexityBot user-agent strings returned complete HTML.
 These probes do not establish access from verified crawler IPs or actual indexing.
+
+The subsequent navbar correction is source `eb43c65`, live in production version
+`f5d309db-d657-4617-a327-83275cf2f5c7`; rollback is
+`6948681c-0f73-4a15-a614-a0e5ae7b9f83`. All five navigation links share a neutral
+`#71717a` default and `#355f7d` hover/keyboard-focus state. Staging computed-style
+checks verified both interactions and the focus outline; production verified all
+five defaults. Lint, 15 tests, and the static-render build passed.
+
+The consulting button's live click handler emitted exactly one `contact_click`
+event with `method: email` and `section: consulting`, followed by transport retries.
+Receipt is not verified: local DNS resolves `us.i.posthog.com` to `0.0.0.0`, and
+both the browser and curl report connection refusal. This is consistent with a
+local/network privacy filter. No filter was changed or bypassed. Complete the
+receipt check from an unfiltered client and inspect that event in PostHog.
+The browser also blocked the external mailto navigation; no email was sent.
+
+The owner declined project case studies; do not add new case-study pages.
