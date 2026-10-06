@@ -10,8 +10,8 @@ const contact = 'mailto:nick@wissahickonanalytics.com?subject=Project%20inquiry'
       <span class="text-ink md:block">§02</span><span class="text-zinc-500 md:block">consulting</span>
     </div>
     <div>
-      <p class="font-mono text-[12px] text-ink">Wissahickon Analytics</p>
-      <h2 id="consulting-heading" class="mt-3 max-w-xl text-2xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-3xl">Data analysis and custom software</h2>
+      <p class="font-mono text-[12px] text-ink"><span class="block sm:inline">Wissahickon Analytics</span><span class="hidden sm:inline"> · </span><span class="block sm:inline">Data analysis and custom software</span></p>
+      <h2 id="consulting-heading" class="mt-3 max-w-xl [text-wrap:balance] text-2xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-3xl">Data tools that help government deliver</h2>
       <p class="mt-5 max-w-xl text-[16px] leading-7 text-zinc-700">Wissahickon Analytics helps governments and civic organizations turn their data into tools people can use: dashboards, budget explainers, and analysis that answers hard questions. I handle the whole project, from messy data to the finished product.</p>
       <p class="mt-4 max-w-xl text-[16px] leading-7 text-zinc-700">So far, that has mostly meant budget work: interactive explainers of the Philadelphia and Pennsylvania budgets for The Philadelphia Citizen, and a public budget dashboard for Montgomery County, Pennsylvania, now in progress. I also maintain the Philadelphia Gun Violence Dashboard pro bono for the Civic Coalition to Save Lives, and I’m open to similar projects.</p>
       <p class="mt-4 max-w-xl text-[16px] leading-7 text-zinc-700">This is part-time work alongside my role at the Delaware Attorney General’s Office, so I take on a small number of projects at a time.</p>
