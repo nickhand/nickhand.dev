@@ -4,7 +4,7 @@ Code behind the personal webpage of Nick Hand at [nickhand.dev](https://www.nick
 
 ## Development
 
-Use Node 22 and npm. The repository intentionally has one lockfile.
+Use Node 22.19+ or 24.11+ and npm. The repository intentionally has one lockfile.
 
 ```bash
 npm ci
@@ -20,6 +20,24 @@ latest Git commit date that changed meaningful homepage copy, links, or
 search-facing images. Documentation, tests, analytics, deployment, and routing
 changes do not claim that the public page changed, and builds fail closed when
 that history is unavailable.
+
+## Rendering and search discovery
+
+Every production and staging build renders the Vue homepage to complete HTML at
+build time, then hydrates it in the browser. Navigation, project links, writing,
+and contact work without JavaScript. The SSR bundle lives in ignored `dist-ssr/`;
+only `dist/` is uploaded. No request-time rendering server is required.
+`scripts/verify-prerender.mjs` rejects builds with missing content, contact links,
+section targets, or an empty app outlet. Analytics initializes only in the browser
+and loads separately from the page's main JavaScript.
+
+The HTML head supplies a canonical URL, consistent search/social descriptions,
+and linked Person, WebSite, WebPage, Organization, and Service entities. Structured
+data must match the visible copy. `robots.txt` allows crawling and advertises the
+homepage and the two independently hosted project sitemaps. Staging stays noindex.
+There is no separate AI-only content or crawler-specific page. Search Console and
+Bing Webmaster Tools ownership, sitemap submission, and indexing status are
+account-side checks; an accessible page does not itself prove indexing or AI citation.
 
 ## Resume
 

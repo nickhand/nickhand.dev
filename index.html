@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nick Hand, PhD — public servant and technologist</title>
+    <title>Nick Hand | Data Analysis &amp; Custom Software</title>
 
     <!-- Primary -->
-    <meta name="description" content="Nick Hand is a public servant protecting consumers, with expertise in technology, data science, and public policy." />
+    <meta name="description" content="Nick Hand is a Philadelphia data scientist and software developer offering data analysis and custom software through Wissahickon Analytics." />
     <meta name="author" content="Nick Hand" />
-    <link rel="canonical" href="https://www.nickhand.dev" />
+    <link rel="canonical" href="https://www.nickhand.dev/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.nickhand.dev" />
-    <meta property="og:title" content="Nick Hand, PhD — public servant and technologist" />
-    <meta property="og:description" content="Nick Hand is a public servant protecting consumers, with expertise in technology, data science, and public policy." />
+    <meta property="og:site_name" content="Nick Hand" />
+    <meta property="og:url" content="https://www.nickhand.dev/" />
+    <meta property="og:title" content="Nick Hand | Data Analysis &amp; Custom Software" />
+    <meta property="og:description" content="Nick Hand is a Philadelphia data scientist and software developer offering data analysis and custom software through Wissahickon Analytics." />
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" content="https://www.nickhand.dev/og-image.png" />
     <meta property="og:image:width" content="1200" />
@@ -24,45 +25,96 @@
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nick Hand, PhD — public servant and technologist" />
-    <meta name="twitter:description" content="Nick Hand is a public servant protecting consumers, with expertise in technology, data science, and public policy." />
+    <meta name="twitter:title" content="Nick Hand | Data Analysis &amp; Custom Software" />
+    <meta name="twitter:description" content="Nick Hand is a Philadelphia data scientist and software developer offering data analysis and custom software through Wissahickon Analytics." />
     <meta name="twitter:image" content="https://www.nickhand.dev/og-image.png" />
+    <meta name="twitter:image:alt" content="Nick Hand, PhD — technologist, data scientist, educator based in Philadelphia." />
 
-    <!-- JSON-LD structured data -->
+    <!-- Structured data describes the people, practice, and service visible on this page. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nick Hand",
-      "honorificSuffix": "PhD",
-      "description": "A public servant protecting consumers, with expertise in technology, data science, and public policy. Based in Philadelphia.",
-      "jobTitle": "Senior AI Policy and Technology Fellow",
-      "url": "https://www.nickhand.dev",
-      "sameAs": [
-        "https://github.com/nickhand",
-        "https://www.linkedin.com/in/nickhandphl"
-      ],
-      "worksFor": {
-        "@type": "GovernmentOrganization",
-        "name": "Delaware Attorney General's Office",
-        "url": "https://attorneygeneral.delaware.gov/",
-        "department": {
-          "@type": "GovernmentOrganization",
-          "name": "Fraud and Consumer Protection Division",
-          "url": "https://attorneygeneral.delaware.gov/fraud/"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://www.nickhand.dev/#person",
+          "name": "Nick Hand",
+          "honorificSuffix": "PhD",
+          "url": "https://www.nickhand.dev/",
+          "description": "Data scientist and software developer in Philadelphia, working on AI and consumer protection at the Delaware Attorney General’s Office.",
+          "sameAs": [
+            "https://github.com/nickhand",
+            "https://www.linkedin.com/in/nickhandphl"
+          ],
+          "affiliation": {
+            "@id": "https://www.nickhand.dev/#wissahickon-analytics"
+          },
+          "worksFor": {
+            "@type": "GovernmentOrganization",
+            "name": "Delaware Attorney General’s Office",
+            "url": "https://attorneygeneral.delaware.gov/"
+          },
+          "email": "nicholas.adam.hand@gmail.com"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.nickhand.dev/#website",
+          "name": "Nick Hand",
+          "alternateName": "nickhand.dev",
+          "url": "https://www.nickhand.dev/",
+          "publisher": {
+            "@id": "https://www.nickhand.dev/#person"
+          },
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.nickhand.dev/#webpage",
+          "name": "Nick Hand | Data Analysis & Custom Software",
+          "description": "Nick Hand is a Philadelphia data scientist and software developer offering data analysis and custom software through Wissahickon Analytics.",
+          "url": "https://www.nickhand.dev/",
+          "isPartOf": {
+            "@id": "https://www.nickhand.dev/#website"
+          },
+          "mainEntity": {
+            "@id": "https://www.nickhand.dev/#person"
+          },
+          "about": [
+            {
+              "@id": "https://www.nickhand.dev/#person"
+            },
+            {
+              "@id": "https://www.nickhand.dev/#wissahickon-analytics"
+            },
+            {
+              "@id": "https://www.nickhand.dev/#consulting-service"
+            }
+          ],
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.nickhand.dev/#wissahickon-analytics",
+          "name": "Wissahickon Analytics",
+          "url": "https://www.nickhand.dev/#consulting",
+          "description": "Data analysis and custom software consulting.",
+          "email": "nick@wissahickonanalytics.com"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.nickhand.dev/#consulting-service",
+          "name": "Data analysis and custom software",
+          "serviceType": [
+            "Data analysis",
+            "Custom software development"
+          ],
+          "description": "Data analysis, underlying data systems, and applications that staff or the public can use.",
+          "provider": {
+            "@id": "https://www.nickhand.dev/#wissahickon-analytics"
+          },
+          "url": "https://www.nickhand.dev/#consulting"
         }
-      },
-      "alumniOf": [
-        { "@type": "EducationalOrganization", "name": "University of California, Berkeley" },
-        { "@type": "EducationalOrganization", "name": "Princeton University" }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Philadelphia",
-        "addressRegion": "PA",
-        "addressCountry": "US"
-      },
-      "email": "nicholas.adam.hand@gmail.com"
+      ]
     }
     </script>
 
