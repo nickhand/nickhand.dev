@@ -38,9 +38,9 @@ test("search and social metadata describe the same page", () => {
   assert.equal(metadata.get("twitter:description"), metadata.get("description"))
   assert.equal(page.description, metadata.get("description"))
   assert.match(title, /Nick Hand/)
-  assert.match(title, /Accountability & Consumer Protection/)
+  assert.match(title, /Public Servant & Data Scientist/)
   assert.match(page.description, /Philadelphia/)
-  assert.match(page.description, /Wissahickon Analytics/)
+  assert.match(page.description, /public servant/)
 })
 
 test("canonical, social, structured data, and sitemap use one homepage URL", () => {

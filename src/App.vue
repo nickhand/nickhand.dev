@@ -61,7 +61,7 @@ onMounted(() => {
     "font:600 13px ui-monospace, monospace; color:#355f7d;",
   );
   console.log(
-    "%cNick Hand, PhD — data scientist working on government accountability and consumer protection.\n" +
+    "%cNick Hand, PhD — public servant and data scientist.\n" +
       "Most of the work here is public, and so is the data behind it.\n" +
       "If you're building something for the public good, say hello.\n\n" +
       "%cSpeak, friend, and enter → nick@wissahickonanalytics.com",

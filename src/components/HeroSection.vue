@@ -23,15 +23,17 @@
     </h1>
     <div class="mt-5 max-w-2xl space-y-4 text-[17px] leading-8 text-zinc-700 sm:text-lg">
       <p>
-        I’m a data scientist and software developer working on government
-        accountability and consumer protection. I’m the Senior AI Policy and
-        Technology Fellow at the Delaware Attorney General’s Office.
+        I’m a public servant and data scientist. I believe government should
+        work well for the people it serves, and that it should hold powerful
+        companies accountable when they harm consumers. I’m currently the Senior
+        AI Policy and Technology Fellow at the Delaware Attorney General’s
+        Office.
       </p>
       <p>
         Before that, I was an enforcement technologist at the Consumer Financial
-        Protection Bureau, where I worked on investigations involving AI,
-        algorithmic bias and data security. I started my
-        career in astrophysics, then led finance, policy and data work in
+        Protection Bureau, working on investigations involving AI, algorithmic
+        bias and data security. I came to government from astrophysics, and
+        spent more than five years leading finance, policy and data work in
         Philadelphia’s City Controller’s Office.
       </p>
     </div>

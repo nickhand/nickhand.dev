@@ -5,7 +5,7 @@ import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 
-const TAGLINE = 'Data scientist working on government accountability and consumer protection.'
+const TAGLINE = 'Public servant and data scientist.'
 
 const chromeArg = process.argv.indexOf('--chrome')
 const chrome = chromeArg > 0
