@@ -113,10 +113,23 @@ January 3, 2027; Netlify manages renewal. Both HTTP and HTTPS on the apex and ww
 hosts were verified, including legacy paths and query strings. Browser navigation
 from the firm domain lands at the consulting section beneath the sticky header.
 
-The latest October 5 revision shortens the opening to two equally sized paragraphs
+The earlier October 5 layout revision shortens the opening to two equally sized paragraphs
 (18px desktop, 17px mobile) and orders the page: introduction, consulting, selected
-work, writing, contact. Degrees remain in the résumé. Source `6a840b2` is live in
+work, writing, contact. Degrees remain in the résumé. Source `6a840b2` was deployed in
 Worker version `00b679c4-417a-4c47-ba28-5a4470d7808e`. The preceding version,
 `72c6cc2b-8113-4c36-a2cf-f30611412ec9`, retains the shorter introduction with the
 portfolio before consulting. Lint, ten tests, production build, desktop/mobile
 inspection and the live bundle/section order were verified.
+
+The current SEO/rendering release is source `001db41`, production Worker version
+`6948681c-0f73-4a15-a614-a0e5ae7b9f83`. Its immediate rollback target is
+`00b679c4-417a-4c47-ba28-5a4470d7808e` (the same layout before static rendering).
+Staging version `9cd09870-28af-4c70-bdd5-2d4c3e0c09b0` was checked first. Lint,
+15 tests, the build-time HTML gate, no-JavaScript browser rendering/navigation,
+mobile layout, hydration, and an interactive event handler passed. The live page
+has complete text, one h1, five linked structured-data entities, and valid assets.
+Missing URLs and the unpublished server entry return 404; both dedicated project
+apps and all three sitemaps remain available. Production has no noindex header;
+staging retains noindex. Public probes using Googlebot, OAI-SearchBot,
+Claude-SearchBot, and PerplexityBot user-agent strings returned complete HTML.
+These probes do not establish access from verified crawler IPs or actual indexing.
