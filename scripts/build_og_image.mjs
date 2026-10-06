@@ -5,7 +5,7 @@ import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join, resolve } from 'node:path'
 
-const TAGLINE = 'Public servant and data scientist.'
+const TAGLINE = 'Public servant and data scientist building tools that help government deliver.'
 
 const chromeArg = process.argv.indexOf('--chrome')
 const chrome = chromeArg > 0
@@ -20,7 +20,7 @@ const html = `<!DOCTYPE html>
 <style>
   html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; background: #fafafa; }
   body { position: relative; font-family: "IBM Plex Sans", sans-serif; -webkit-font-smoothing: antialiased; }
-  .text { position: absolute; left: 80px; top: 0; bottom: 0; width: 600px; display: flex; flex-direction: column; justify-content: center; }
+  .text { position: absolute; left: 80px; top: 0; bottom: 0; width: 520px; display: flex; flex-direction: column; justify-content: center; }
   .place { font: 400 20px "IBM Plex Mono", monospace; color: #71717a; }
   h1 { margin: 22px 0 0; font-size: 64px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.05; color: #18181b; }
   h1 span { color: #355f7d; }

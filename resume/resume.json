@@ -31,10 +31,11 @@
       "organization": "Wissahickon Analytics",
       "dates": "2026 - Present",
       "bullets": [
+        "Help governments and civic organizations turn their data into tools people can use: dashboards, budget explainers, and analysis.",
         "Building a public budget dashboard for Montgomery County, Pennsylvania.",
         "Designed and built interactive explainers of the <a href=\"https://thephiladelphiacitizen.org/mayor-parker-2026-budget/\">Philadelphia</a> and <a href=\"https://thephiladelphiacitizen.org/pa-budget-2026/\">Pennsylvania</a> budgets for The Philadelphia Citizen.",
         "Maintain the <a href=\"https://savephillylives.org/map/\">Philadelphia Gun Violence Dashboard</a> pro bono for the Civic Coalition to Save Lives.",
-        "Built <a href=\"https://www.nickhand.dev/fair-measure/\">Fair Measure</a>, an independent project that trains machine-learning models on public property records to flag likely over- and under-assessed homes."
+        "Built <a href=\"https://www.nickhand.dev/fair-measure/\">Fair Measure</a>, a free tool that checks whether a home's property assessment looks fair by comparing it with an independent machine-learning estimate built from public records."
       ]
     },
     {
