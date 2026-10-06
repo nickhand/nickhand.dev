@@ -54,3 +54,30 @@ Before `deploy:cloudflare:production`, run `npm run check`, capture the active
 Worker version as the rollback target, and verify the apex redirect preserves
 every path and query string at `www`. The production `VITE_POSTHOG_KEY` must be
 present in the build environment.
+
+## Wissahickon Analytics redirect
+
+`deploy/wissahickon-redirect/` is the complete static publish directory for the
+separate Netlify project `wissahickon-analytics-redirect`
+(site ID `d2fa3821-cea2-4fac-ac3f-6fea55afe0b5`). Its forced permanent redirect sends
+all paths to `https://www.nickhand.dev/#consulting`. Upload this directory, or a
+ZIP with its two files at the archive root, to that project when changing the
+redirect. Do not upload the personal-site build to this project.
+
+The Netlify DNS zone for `wissahickonanalytics.com` retains its existing name
+servers and mail records. Only the apex and `www` website records point to this
+redirect project. The previous `www.wissahickonanalytics.com` alias was removed
+from the paused legacy project `resilient-salamander-beb17c`, whose shared
+certificate could no longer renew after nickhand.dev moved to Cloudflare.
+
+The approved consulting copy (source commit `5ca79e0`) was deployed on October 5,
+2026, to production Worker version `7e3b683e-1f94-4ed1-9e50-eea481595772`.
+The previous retained version is `62eb8765-59ea-49ac-befd-12af714a8c71`:
+
+```bash
+npx wrangler rollback 62eb8765-59ea-49ac-befd-12af714a8c71 --env production
+```
+
+That rollback predates the consulting section, so coordinate the redirect
+if restoring it. Fair Measure and the gun-violence dashboard have independent
+Worker versions and routes and are not rolled back by this command.
