@@ -21,32 +21,17 @@
     >
       Nick Hand<span class="text-ink">, PhD</span>
     </h1>
-    <p class="mt-5 max-w-2xl text-[17px] leading-8 text-zinc-700 sm:text-lg">
-      I’m a data scientist working in consumer protection, currently focused on
-      AI at the Delaware Attorney General’s Office. Previously, I worked at the
-      Consumer Financial Protection Bureau and led policy and data analysis in
-      Philadelphia’s City Controller’s Office.
-    </p>
-    <p class="mt-4 max-w-2xl text-[17px] leading-8 text-zinc-600 sm:text-lg">
-      Philadelphia is home. I build and maintain public tools like the
-      <a
-        href="/philly-gun-violence-map"
-        class="text-ink underline decoration-zinc-300 underline-offset-4 transition-colors hover:decoration-ink"
-        @click="capture('project_click', { title: 'Mapping Philadelphia\'s Gun Violence', href: '/philly-gun-violence-map', section: 'hero' })"
-        >Philadelphia Gun Violence Dashboard</a
-      > and
-      <a
-        href="/fair-measure"
-        class="text-ink underline decoration-zinc-300 underline-offset-4 transition-colors hover:decoration-ink"
-        @click="capture('project_click', { title: 'Fair Measure Philadelphia', href: '/fair-measure', section: 'hero' })"
-        >Fair Measure</a
-      >, a model for fairer, more transparent property assessments, built entirely
-      from public data.
-    </p>
-    <p class="mt-4 max-w-2xl text-[15px] leading-7 text-zinc-600">
-      I started my career in astrophysics, earning a PhD from UC&nbsp;Berkeley
-      and a BA from Princeton.
-    </p>
+    <div class="mt-5 max-w-2xl space-y-4 text-[17px] leading-8 text-zinc-700 sm:text-lg">
+      <p>
+        I’m a data scientist and software developer in Philadelphia, currently
+        working on AI and consumer protection at the Delaware Attorney General’s
+        Office.
+      </p>
+      <p>
+        Previously, I worked at the Consumer Financial Protection Bureau and led
+        policy and data analysis in Philadelphia’s City Controller’s Office.
+      </p>
+    </div>
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
       <a
         :href="links.resume"
