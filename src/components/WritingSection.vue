@@ -12,7 +12,7 @@
       <p class="mt-5 max-w-xl text-[16px] leading-7 text-zinc-700">
         Pieces for
         <span class="font-medium text-zinc-800">The Philadelphia Citizen</span>:
-        an op-ed on the Consumer Financial Protection Bureau, and interactive
+        an op‑ed on the Consumer Financial Protection Bureau, and interactive
         explainers of the Philadelphia and Pennsylvania budgets that I built
         through Wissahickon Analytics.
       </p>

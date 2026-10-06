@@ -6,7 +6,7 @@
     >Skip to main content</a>
     <div class="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-3 px-6 py-3">
       <a href="/" class="font-mono text-[14px] font-medium text-zinc-900 transition-colors duration-[180ms] hover:text-ink">nickhand<span class="text-ink">.dev</span></a>
-      <nav class="flex flex-wrap gap-3 font-mono text-[13px] sm:gap-5">
+      <nav class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[12px] sm:gap-5 sm:text-[13px]">
         <a href="#about" class="nav-link">about</a>
         <a href="#consulting" class="nav-link">consulting</a>
         <a href="#work" class="nav-link">work</a>
