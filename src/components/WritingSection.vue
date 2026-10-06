@@ -10,10 +10,11 @@
     <div>
       <h2 id="writing-heading" class="max-w-xl text-2xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-3xl">Writing &amp; public data</h2>
       <p class="mt-5 max-w-xl text-[16px] leading-7 text-zinc-700">
-        I’m an occasional contributor to
-        <span class="font-medium text-zinc-800">The Philadelphia Citizen</span>,
-        with an op-ed on the Consumer Financial Protection Bureau and
-        interactive data pieces on the Philadelphia and Pennsylvania budgets.
+        Pieces for
+        <span class="font-medium text-zinc-800">The Philadelphia Citizen</span>:
+        an op-ed on the Consumer Financial Protection Bureau, and interactive
+        explainers of the Philadelphia and Pennsylvania budgets that I built
+        through Wissahickon Analytics.
       </p>
       <ul
         class="mt-6 divide-y divide-zinc-200 border-y border-zinc-200"

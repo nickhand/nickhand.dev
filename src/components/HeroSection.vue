@@ -23,13 +23,17 @@
     </h1>
     <div class="mt-5 max-w-2xl space-y-4 text-[17px] leading-8 text-zinc-700 sm:text-lg">
       <p>
-        I’m a data scientist and software developer in Philadelphia, currently
-        working on AI and consumer protection at the Delaware Attorney General’s
-        Office.
+        I’m a data scientist and software developer working on government
+        accountability and consumer protection. I’m the Senior AI Policy and
+        Technology Fellow at the Delaware Attorney General’s Office.
       </p>
       <p>
-        Previously, I worked at the Consumer Financial Protection Bureau and led
-        policy and data analysis in Philadelphia’s City Controller’s Office.
+        Before that, I was an enforcement technologist at the Consumer Financial
+        Protection Bureau, where I worked on investigations involving AI,
+        algorithmic bias and data security. Public cases I worked on include
+        matters involving Zelle and Meta. Earlier, I was
+        director of finance, policy and data in Philadelphia’s City
+        Controller’s Office.
       </p>
     </div>
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">

@@ -61,10 +61,10 @@ onMounted(() => {
     "font:600 13px ui-monospace, monospace; color:#355f7d;",
   );
   console.log(
-    "%cNick Hand, PhD — public servant, technologist, data scientist, educator.\n" +
+    "%cNick Hand, PhD — data scientist working on government accountability and consumer protection.\n" +
       "Most of the work here is public, and so is the data behind it.\n" +
       "If you're building something for the public good, say hello.\n\n" +
-      "%cSpeak, friend, and enter → nicholas.adam.hand@gmail.com",
+      "%cSpeak, friend, and enter → nick@wissahickonanalytics.com",
     "font:12px ui-monospace, monospace; color:#52525b; line-height:1.65;",
     "font:600 12px ui-monospace, monospace; color:#355f7d; line-height:1.65;",
   );
@@ -81,7 +81,7 @@ onUnmounted(() => {
   <div
     class="min-h-screen bg-zinc-50 font-sans text-zinc-800 antialiased selection:bg-ink/15"
   >
-    <!-- you're reading the source. nice. the rest of the work is public too. say hi → nicholas.adam.hand@gmail.com -->
+    <!-- you're reading the source. nice. the rest of the work is public too. say hi → nick@wissahickonanalytics.com -->
     <SiteHeader />
     <main id="main-content" class="mx-auto max-w-3xl px-6">
       <HeroSection />
@@ -122,7 +122,7 @@ onUnmounted(() => {
             <br /><span class="text-zinc-400"
               >271&nbsp;steps from the Wissahickon. say hi &rarr;
               <a
-                href="mailto:nicholas.adam.hand@gmail.com"
+                href="mailto:nick@wissahickonanalytics.com"
                 class="text-ink underline"
                 >email</a
               ></span

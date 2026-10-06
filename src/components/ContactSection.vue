@@ -10,7 +10,7 @@
         :href="links.email"
         class="mt-2 inline-block font-mono text-[15px] text-ink transition-colors duration-[180ms] hover:text-ink/80"
         @click="capture('contact_click', { method: 'email', section: 'contact' })"
-        >nicholas.adam.hand@gmail.com</a
+        >nick@wissahickonanalytics.com</a
       >
       <div class="mt-5 flex flex-wrap gap-2 font-mono text-[13px]">
         <a

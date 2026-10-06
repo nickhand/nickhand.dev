@@ -1,12 +1,13 @@
 {
   "name": "Nick Hand, PhD",
-  "tagline": "Public Servant  |  Consumer Protection  |  Technology & Data",
+  "tagline": "Data Science  |  Government Accountability  |  Consumer Protection",
   "links": [
+    { "label": "nick@wissahickonanalytics.com", "url": "mailto:nick@wissahickonanalytics.com" },
     { "label": "nickhand.dev", "url": "https://www.nickhand.dev/" },
     { "label": "linkedin.com/in/nickhandphl", "url": "https://www.linkedin.com/in/nickhandphl" },
     { "label": "github.com/nickhand", "url": "https://github.com/nickhand" }
   ],
-  "summary": "Public servant protecting consumers, with expertise in technology, data science, and public policy. PhD in astrophysics with more than a decade of Python experience across the modern data science toolkit. Background spans AI/ML policy, data privacy, algorithmic bias, and civic data, with experience leading technical teams, building widely used interactive data visualizations, and communicating complex findings to executive and public audiences.",
+  "summary": "Data scientist and software developer working on government accountability and consumer protection. PhD in astrophysics with more than a decade of Python experience across the modern data science toolkit. Background spans AI/ML policy, data privacy, algorithmic bias, and civic data, with experience leading technical teams, building widely used interactive data visualizations, and communicating complex findings to executive and public audiences.",
   "expertise": [
     "Python and the modern data science toolkit (10+ years), including advanced statistical analysis and AI/ML algorithms",
     "Geospatial analysis techniques and GIS software tools",
@@ -26,6 +27,17 @@
       "bullets": []
     },
     {
+      "title": "Founder",
+      "organization": "Wissahickon Analytics",
+      "dates": "2026 - Present",
+      "bullets": [
+        "Building a public budget dashboard for Montgomery County, Pennsylvania.",
+        "Designed and built interactive explainers of the <a href=\"https://thephiladelphiacitizen.org/mayor-parker-2026-budget/\">Philadelphia</a> and <a href=\"https://thephiladelphiacitizen.org/pa-budget-2026/\">Pennsylvania</a> budgets for The Philadelphia Citizen.",
+        "Maintain the <a href=\"https://savephillylives.org/map/\">Philadelphia Gun Violence Dashboard</a> pro bono for the Civic Coalition to Save Lives.",
+        "Built <a href=\"https://www.nickhand.dev/fair-measure/\">Fair Measure</a>, an independent project that trains machine-learning models on public property records to flag likely over- and under-assessed homes."
+      ]
+    },
+    {
       "title": "Senior Analytics Manager",
       "organization": "Voyatek",
       "dates": "April 2025 - September 2026",
@@ -37,6 +49,7 @@
       "title": "Enforcement Technologist",
       "organization": "Consumer Financial Protection Bureau (CFPB)",
       "dates": "September 2023 - April 2025",
+      "new_page": true,
       "bullets": [
         "Key contributor to the Enforcement Division technologist team that developed new case investigations, provided key insights to cross-functional case teams on a range of technology topics, and identified new opportunities for improving operational efficiency.",
         "Identified and developed technical strategies to achieve CFPB goals related to AI and machine learning, algorithmic bias, and data security by researching, developing, and pitching new cases in those priority areas.",
@@ -47,7 +60,6 @@
       "title": "Lecturer, Master of Urban Spatial Analytics",
       "organization": "University of Pennsylvania",
       "dates": "September 2019 - January 2024",
-      "new_page": true,
       "bullets": [
         "Taught the <a href=\"https://musa-550-fall-2023.github.io/\">Geospatial Data Science in Python</a> course once per school year in the Master of Urban Spatial Analytics (MUSA) program in the Weitzman School.",
         "Developed the course curriculum from scratch, covering a wide range of data visualization, data science, and machine learning techniques using a Python stack with real-world case studies in urban planning and public policy."
@@ -70,6 +82,7 @@
       "dates": "2017",
       "bullets": [
         "Co-authored papers with thousands of citations, including six first-author papers (more than 700 citations).",
+        "Co-developed <a href=\"https://nbodykit.readthedocs.io\">nbodykit</a>, an open-source, MPI-parallel Python toolkit for large cosmology datasets, and first-authored the paper describing it.",
         "DOE Office of Science Research Fellow.",
         "National Science Foundation Graduate Research Fellow."
       ]
