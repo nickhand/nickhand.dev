@@ -10,16 +10,16 @@ export const writing: WritingItem[] = [
   {
     title: "Who will protect you now?",
     href: "https://thephiladelphiacitizen.org/guest-commentary-who-will-protect-you-now/",
-    meta: "op-ed · cfpb",
+    meta: "op-ed · consumer protection",
     date: "2025-02-25",
   },
   {
-    title: "Philadelphia FY27 budget interactive",
+    title: "Philadelphia’s budget, explained (2026–27)",
     href: "https://thephiladelphiacitizen.org/mayor-parker-2026-budget/",
     meta: "dataviz · philadelphia",
   },
   {
-    title: "Pennsylvania 2026-27 budget interactive",
+    title: "Pennsylvania’s budget, explained (2026–27)",
     href: "https://thephiladelphiacitizen.org/pa-budget-2026/",
     meta: "dataviz · pennsylvania",
   },

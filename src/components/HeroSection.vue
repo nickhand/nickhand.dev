@@ -25,16 +25,18 @@
       <p>
         I’m a public servant and data scientist. I believe government should
         work well for the people it serves, and that it should hold powerful
-        companies accountable when they harm consumers. I’m currently the Senior
-        AI Policy and Technology Fellow at the Delaware Attorney General’s
-        Office.
+        companies accountable when they take advantage of people. I’m currently
+        the Senior AI Policy and Technology Fellow at the Delaware Attorney
+        General’s Office.
       </p>
       <p>
-        Before that, I was an enforcement technologist at the Consumer Financial
-        Protection Bureau, working on investigations involving AI, algorithmic
-        bias and data security. I came to government from astrophysics, and
-        spent more than five years leading finance, policy and data work in
-        Philadelphia’s City Controller’s Office.
+        Before that, I worked at the Consumer Financial Protection Bureau, the
+        federal agency that protects people from unfair practices by banks and
+        lenders, where I investigated how financial companies use AI and
+        customer data. I came to government from astrophysics, and spent more
+        than five years in Philadelphia’s City Controller’s Office, the
+        independent office that audits city government, leading a team that
+        studied the city’s budget, taxes, property assessments and gun violence.
       </p>
     </div>
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
