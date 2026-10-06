@@ -85,8 +85,8 @@ onUnmounted(() => {
     <SiteHeader />
     <main id="main-content" class="mx-auto max-w-3xl px-6">
       <HeroSection />
-      <SelectedWork />
       <ConsultingSection />
+      <SelectedWork />
       <WritingSection />
       <ContactSection />
     </main>

@@ -7,8 +7,8 @@
     <div class="mx-auto flex max-w-3xl flex-wrap items-center justify-between gap-3 px-6 py-3">
       <a href="#main-content" class="font-mono text-[14px] font-medium text-zinc-900 transition-colors duration-[180ms] hover:text-ink">nickhand<span class="text-ink">.dev</span></a>
       <nav class="flex flex-wrap gap-3 font-mono text-[13px] text-zinc-500 sm:gap-5">
-        <a href="#work" class="transition-colors duration-[180ms] hover:text-ink">work</a>
         <a href="#consulting" class="text-ink transition-colors duration-[180ms] hover:text-zinc-900">consulting</a>
+        <a href="#work" class="transition-colors duration-[180ms] hover:text-ink">work</a>
         <a href="#writing" class="hidden transition-colors duration-[180ms] hover:text-ink sm:inline">writing</a>
         <a href="#contact" class="transition-colors duration-[180ms] hover:text-ink">contact</a>
         <a href="/resume.pdf" aria-label="Resume (PDF)" class="text-ink" @click="capture('resume_click', { section: 'header' })">resume</a>
