@@ -39,6 +39,18 @@ There is no separate AI-only content or crawler-specific page. Search Console an
 Bing Webmaster Tools ownership, sitemap submission, and indexing status are
 account-side checks; an accessible page does not itself prove indexing or AI citation.
 
+## Social image
+
+`public/og-image.png` is rendered from HTML with headless Chrome. Edit the tagline
+in `scripts/build_og_image.mjs` when the site's framing changes, then run:
+
+```bash
+node scripts/build_og_image.mjs
+```
+
+Pass `--chrome /path/to/chrome` if Chrome is not in `/Applications`. Update
+`og:image:alt` and `twitter:image:alt` in `index.html` to match the image text.
+
 ## Resume
 
 Edit `resume/resume.json`, then regenerate the downloadable PDF:
