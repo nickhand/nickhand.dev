@@ -13,7 +13,7 @@ export function verifyPrerenderedHtml(html) {
   assert.match(content, /University of Pennsylvania/, 'Missing teaching experience')
   assert.match(content, /href="mailto:nick@wissahickonanalytics\.com\?subject=Project%20inquiry"/, 'Project contact must work without JavaScript')
   const sections = [...content.matchAll(/<section\b[^>]*\bid="([^"]+)"/g)].map(match => match[1])
-  assert.deepEqual(sections, ['about', 'consulting', 'work', 'writing', 'contact'], 'Missing or reordered sections')
+  assert.deepEqual(sections, ['intro', 'about', 'consulting', 'work', 'writing', 'contact'], 'Missing or reordered sections')
   for (const target of content.matchAll(/href="#([^"]+)"/g)) {
     assert.ok(content.includes(`id="${target[1]}"`), `Broken fragment link: ${target[1]}`)
   }

@@ -1,7 +1,7 @@
 <template>
   <section id="contact" aria-labelledby="contact-heading" class="grid grid-cols-1 gap-x-6 gap-y-4 py-12 md:grid-cols-[5rem_1fr]">
     <div class="flex gap-2 tabular-nums font-mono text-[12px] md:block">
-      <span class="text-ink md:block">§04</span><span class="text-zinc-500 md:block">contact</span>
+      <span class="text-ink md:block">§05</span><span class="text-zinc-500 md:block">contact</span>
     </div>
     <div>
       <h2 id="contact-heading" class="max-w-xl text-2xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-3xl">Contact</h2>

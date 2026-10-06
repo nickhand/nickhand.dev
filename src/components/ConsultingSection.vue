@@ -7,7 +7,7 @@ const contact = 'mailto:nick@wissahickonanalytics.com?subject=Project%20inquiry'
 <template>
   <section id="consulting" aria-labelledby="consulting-heading" class="grid grid-cols-1 gap-x-6 gap-y-4 border-b border-zinc-200 py-12 md:grid-cols-[5rem_1fr]">
     <div class="flex gap-2 tabular-nums font-mono text-[12px] md:block">
-      <span class="text-ink md:block">§01</span><span class="text-zinc-500 md:block">consulting</span>
+      <span class="text-ink md:block">§02</span><span class="text-zinc-500 md:block">consulting</span>
     </div>
     <div>
       <p class="font-mono text-[12px] text-ink">Wissahickon Analytics</p>

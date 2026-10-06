@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="border-b border-zinc-200 py-14">
+  <section id="intro" class="border-b border-zinc-200 py-14">
     <div
       class="mb-6 flex items-center gap-3 font-mono text-[12px] text-zinc-500"
     >
@@ -23,20 +23,10 @@
     </h1>
     <div class="mt-5 max-w-2xl space-y-4 text-[17px] leading-8 text-zinc-700 sm:text-lg">
       <p>
-        I’m a public servant and data scientist. I believe government should
-        work well for the people it serves, and that it should hold powerful
-        companies accountable when they take advantage of people. I’m currently
-        the Senior AI Policy and Technology Fellow at the Delaware Attorney
-        General’s Office.
-      </p>
-      <p>
-        Before that, I worked at the Consumer Financial Protection Bureau, the
-        federal agency that protects people from unfair practices by banks and
-        lenders, where I investigated how financial companies use AI and
-        customer data. I came to government from astrophysics, and spent more
-        than five years in Philadelphia’s City Controller’s Office, the
-        independent office that audits city government, leading a team that
-        studied the city’s budget, taxes, property assessments and gun violence.
+        I’m a public servant and data scientist at the Delaware Attorney
+        General’s Office. I believe government should deliver for the public
+        and hold powerful companies accountable when they take advantage of
+        people.
       </p>
     </div>
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
