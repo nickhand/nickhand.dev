@@ -6,15 +6,15 @@ const contact = 'mailto:nick@wissahickonanalytics.com?subject=Project%20inquiry'
 
 <template>
   <section id="consulting" aria-labelledby="consulting-heading" class="grid grid-cols-1 gap-x-6 gap-y-4 border-b border-zinc-200 py-12 md:grid-cols-[5rem_1fr]">
-    <div class="tabular-nums font-mono text-[12px]">
-      <span class="text-ink">§01</span><br /><span class="text-zinc-500">consulting</span>
+    <div class="flex gap-2 tabular-nums font-mono text-[12px] md:block">
+      <span class="text-ink md:block">§01</span><span class="text-zinc-500 md:block">consulting</span>
     </div>
     <div>
       <p class="font-mono text-[12px] text-ink">Wissahickon Analytics</p>
       <h2 id="consulting-heading" class="mt-3 max-w-xl text-2xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-3xl">Data analysis and custom software</h2>
-      <p class="mt-5 max-w-xl text-[16px] leading-8 text-zinc-700">I’m a data scientist and software developer. Through Wissahickon Analytics, I help organizations answer questions with data and build tools their staff or the public can use. I work on the analysis, the underlying data systems, and the application people interact with.</p>
-      <p class="mt-4 max-w-xl text-[15px] leading-7 text-zinc-600">I like working on hard problems, especially when the work helps people understand an issue or improves how a public service works. I’m particularly interested in making budget data more accessible and helping government deliver better services.</p>
-      <div class="mt-7 max-w-2xl text-[15px] leading-7 text-zinc-600">
+      <p class="mt-5 max-w-xl text-[16px] leading-7 text-zinc-700">I’m a data scientist and software developer. Through Wissahickon Analytics, I help organizations answer questions with data and build tools their staff or the public can use. I work on the analysis, the underlying data systems, and the application people interact with.</p>
+      <p class="mt-4 max-w-xl text-[16px] leading-7 text-zinc-700">I like working on hard problems, especially when the work helps people understand an issue or improves how a public service works. I’m particularly interested in making budget data more accessible and helping government deliver better services.</p>
+      <div class="mt-7 max-w-2xl text-[16px] leading-7 text-zinc-700">
         <p class="font-medium text-zinc-900">My work has included:</p>
         <ul class="mt-3 list-disc space-y-3 pl-5 marker:text-ink/60">
           <li>Building the <a class="text-ink underline underline-offset-4" href="/philly-gun-violence-map">Philadelphia Gun Violence Dashboard</a> at the City Controller’s Office. I now maintain it independently.</li>
@@ -24,9 +24,9 @@ const contact = 'mailto:nick@wissahickonanalytics.com?subject=Project%20inquiry'
           <li>Developing <a class="text-ink underline underline-offset-4" href="https://controller.phila.gov/philadelphia-audits/progressphl/">ProgressPHL</a>, a neighborhood well-being dashboard, at the Controller’s Office.</li>
         </ul>
       </div>
-      <p class="mt-7 max-w-xl text-[15px] leading-7 text-zinc-600">I also developed and taught <a class="text-ink underline underline-offset-4" href="https://musa-550-fall-2023.github.io/">Geospatial Data Science in Python</a> in the University of Pennsylvania’s Master of Urban Spatial Analytics program. The course covered data analysis, visualization and machine learning through examples from urban planning and public policy.</p>
+      <p class="mt-7 max-w-xl text-[16px] leading-7 text-zinc-700">I also developed and taught <a class="text-ink underline underline-offset-4" href="https://musa-550-fall-2023.github.io/">Geospatial Data Science in Python</a> in the University of Pennsylvania’s Master of Urban Spatial Analytics program. The course covered data analysis, visualization and machine learning through examples from urban planning and public policy.</p>
       <div class="mt-8">
-        <a :href="contact" class="action-link" @click="capture('contact_click', { method: 'email', section: 'consulting' })">discuss a project</a>
+        <a :href="contact" class="action-link-primary" @click="capture('contact_click', { method: 'email', section: 'consulting' })">discuss a project</a>
         <p class="mt-3 max-w-xl text-[14px] leading-6 text-zinc-500">Email me with a short description of the work you have in mind.</p>
       </div>
     </div>

@@ -38,7 +38,7 @@
         aria-label="Resume (PDF)"
         class="action-link"
         @click="capture('resume_click', { section: 'hero' })"
-        >resume</a
+        >resume.pdf</a
       >
       <a
         :href="links.github"

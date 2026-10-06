@@ -7,7 +7,7 @@ export interface WorkItem {
 
 export const work: WorkItem[] = [
   {
-    title: "Mapping Philadelphia's Gun Violence",
+    title: "Mapping Philadelphia’s Gun Violence",
     href: "/philly-gun-violence-map",
     description:
       "Interactive dashboard I built at Philadelphia’s City Controller’s Office and now maintain independently, combining public records, geospatial analysis, maps and charts.",
@@ -24,7 +24,7 @@ export const work: WorkItem[] = [
     title: "ProgressPHL",
     href: "https://controller.phila.gov/philadelphia-audits/progressphl/",
     description:
-      "A neighborhood well-being dashboard developed at the Philadelphia City Controller's Office.",
+      "A neighborhood well-being dashboard developed at the Philadelphia City Controller’s Office.",
     meta: "civic-indicators · public-dashboard · philadelphia",
   },
   {

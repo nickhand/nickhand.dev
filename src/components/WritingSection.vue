@@ -1,20 +1,22 @@
 <template>
   <section
     id="writing"
+    aria-labelledby="writing-heading"
     class="grid grid-cols-1 gap-x-6 gap-y-4 border-b border-zinc-200 py-12 md:grid-cols-[5rem_1fr]"
   >
-    <div class="tabular-nums font-mono text-[12px]">
-      <span class="text-ink">§03</span><br /><h2 class="m-0 p-0 font-mono text-[12px] font-normal text-zinc-500">writing &amp; public&nbsp;data</h2>
+    <div class="flex gap-2 tabular-nums font-mono text-[12px] md:block">
+      <span class="text-ink md:block">§03</span><span class="text-zinc-500 md:block">writing</span>
     </div>
     <div>
-      <p class="max-w-xl text-[16px] leading-8 text-zinc-600">
-        I'm an occasional contributor to
+      <h2 id="writing-heading" class="max-w-xl text-2xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-3xl">Writing &amp; public data</h2>
+      <p class="mt-5 max-w-xl text-[16px] leading-7 text-zinc-700">
+        I’m an occasional contributor to
         <span class="font-medium text-zinc-800">The Philadelphia Citizen</span>,
         with an op-ed on the Consumer Financial Protection Bureau and
         interactive data pieces on the Philadelphia and Pennsylvania budgets.
       </p>
       <ul
-        class="mt-6 divide-y divide-zinc-200 border-y border-zinc-200 font-mono text-[14px]"
+        class="mt-6 divide-y divide-zinc-200 border-y border-zinc-200"
       >
         <WritingItem
           v-for="item in writing"
@@ -22,6 +24,7 @@
           :title="item.title"
           :href="item.href"
           :meta="item.meta"
+          :date="item.date"
         />
       </ul>
     </div>

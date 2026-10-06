@@ -10,6 +10,10 @@
   .action-link {
     @apply inline-flex rounded-sm border border-zinc-300 px-3 py-1.5 font-mono text-[13px] text-zinc-700 transition-colors duration-[180ms] hover:border-ink;
   }
+
+  .action-link-primary {
+    @apply inline-flex rounded-sm border border-ink bg-ink px-3 py-1.5 font-mono text-[13px] text-white transition-colors duration-[180ms] hover:border-zinc-900 hover:bg-zinc-900;
+  }
 }
 
 main[id], section[id] {

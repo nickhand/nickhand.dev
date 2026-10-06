@@ -18,4 +18,8 @@ export function verifyPrerenderedHtml(html) {
     assert.ok(content.includes(`id="${target[1]}"`), `Broken fragment link: ${target[1]}`)
   }
   assert.doesNotMatch(content, /<div id="main"><\/div>|<!--ssr-outlet-->/, 'Unrendered app outlet')
+  // Visible copy uses typographic quotes (’ “ ”). Attributes and code may use straight ones.
+  const text = content.replace(/<!--[\s\S]*?-->/g, '').replace(/<[^>]*>/g, ' ')
+  const straight = text.match(/[^\s]{0,30}(?:['"]|&#39;|&#x27;|&quot;|&#34;)[^\s]{0,30}/)
+  assert.ok(!straight, `Straight quote in visible text, use ’ or “ ”: ${straight?.[0]}`)
 }

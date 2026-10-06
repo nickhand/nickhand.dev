@@ -1,10 +1,11 @@
 <template>
-  <section id="contact" class="grid grid-cols-1 gap-x-6 gap-y-4 py-12 md:grid-cols-[5rem_1fr]">
-    <div class="tabular-nums font-mono text-[12px]">
-      <span class="text-ink">§04</span><br /><h2 class="m-0 p-0 font-mono text-[12px] font-normal text-zinc-500">contact</h2>
+  <section id="contact" aria-labelledby="contact-heading" class="grid grid-cols-1 gap-x-6 gap-y-4 py-12 md:grid-cols-[5rem_1fr]">
+    <div class="flex gap-2 tabular-nums font-mono text-[12px] md:block">
+      <span class="text-ink md:block">§04</span><span class="text-zinc-500 md:block">contact</span>
     </div>
     <div>
-      <p class="max-w-xl text-xl leading-8 text-zinc-800">Email is the best way to reach me.</p>
+      <h2 id="contact-heading" class="max-w-xl text-2xl font-medium leading-tight tracking-tight text-zinc-900 sm:text-3xl">Contact</h2>
+      <p class="mt-5 max-w-xl text-[16px] leading-7 text-zinc-700">Email is the best way to reach me.</p>
       <a
         :href="links.email"
         class="mt-2 inline-block font-mono text-[15px] text-ink transition-colors duration-[180ms] hover:text-ink/80"
@@ -30,9 +31,10 @@
         >
         <a
           :href="links.resume"
+          aria-label="Resume (PDF)"
           class="action-link"
           @click="capture('resume_click', { section: 'contact' })"
-          >resume</a
+          >resume.pdf</a
         >
       </div>
     </div>
