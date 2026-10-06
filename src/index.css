@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  .nav-link {
+    @apply text-zinc-500 transition-colors duration-[180ms] hover:text-ink focus-visible:text-ink;
+  }
+
   .action-link {
     @apply inline-flex rounded-sm border border-zinc-300 px-3 py-1.5 font-mono text-[13px] text-zinc-700 transition-colors duration-[180ms] hover:border-ink;
   }
