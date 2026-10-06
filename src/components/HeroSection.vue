@@ -31,8 +31,8 @@
         Before that, I was an enforcement technologist at the Consumer Financial
         Protection Bureau, where I worked on investigations involving AI,
         algorithmic bias and data security. I started my
-        public-sector career as director of finance, policy and data in Philadelphia’s City
-        Controller’s Office.
+        career in astrophysics, then led finance, policy and data work in
+        Philadelphia’s City Controller’s Office.
       </p>
     </div>
     <div class="mt-7 flex flex-wrap gap-2 font-mono text-[13px]">
