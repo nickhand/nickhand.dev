@@ -35,7 +35,8 @@ html {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .phl-draw { stroke-dashoffset: 0; }
-  .phl-pin { opacity: 1; animation: none; }
+  .phl-go .phl-draw, .phl-go .phl-creek, .phl-go .phl-pin { animation: none; }
+  .phl-pin, .phl-go .phl-pin { opacity: 1; }
 }
 
 /* Footer heartbeat */
