@@ -100,6 +100,24 @@ redirect project. The previous `www.wissahickonanalytics.com` alias was removed
 from the paused legacy project `resilient-salamander-beb17c`, whose shared
 certificate could no longer renew after nickhand.dev moved to Cloudflare.
 
+The project also serves the alternate domains `wissahickonanalytics.co` and
+`wissdata.co` as domain aliases, so they redirect to the same consulting section.
+Their `www` hosts need no separate alias: Netlify DNS points them at the project,
+the Let's Encrypt certificate covers `*.wissahickonanalytics.co` and
+`*.wissdata.co`, and Netlify sends them to the primary domain, which then
+redirects. Both domains are registered at Namecheap but use Netlify DNS
+(`nsone.net` name servers), so redirects and records are managed in Netlify, not
+Namecheap. Their Google Workspace MX records stay in those Netlify DNS zones.
+
+Those aliases previously sat on the legacy project, as `www.wissahickonanalytics.co`
+and `www.wissdata.co`, and were removed on October 5, 2026. A domain can be
+attached to only one Netlify project, and removing an alias also deletes the
+website records Netlify had created for it (mail records are untouched). Adding
+the alias to this project recreates them. Netlify limits domain-alias changes to
+three per hour on this plan. The legacy project still lists `nickhand.dev`
+and `www.nickhand.dev`; they are stale but harmless, because nickhand.dev's
+DNS now points at Cloudflare.
+
 The approved consulting copy (source commit `5ca79e0`) was deployed on October 5,
 2026, to production Worker version `7e3b683e-1f94-4ed1-9e50-eea481595772`.
 The previous retained version is `62eb8765-59ea-49ac-befd-12af714a8c71`:
