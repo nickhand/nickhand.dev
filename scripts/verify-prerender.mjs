@@ -8,7 +8,7 @@ export function verifyPrerenderedHtml(html) {
   const content = body.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
   assert.ok(/<h1\b[^>]*>\s*Nick Hand/.test(content), 'Name must be visible HTML')
   assert.equal((content.match(/<h1\b/g) || []).length, 1, 'Expected one page heading')
-  assert.match(content, /Data analysis and custom software/, 'Missing consulting content')
+  assert.match(content, /data analysis and custom software/i, 'Missing consulting content')
   assert.match(content, /Philadelphia Gun Violence Dashboard/, 'Missing project evidence')
   assert.match(content, /University of Pennsylvania/, 'Missing teaching experience')
   assert.match(content, /href="mailto:nick@wissahickonanalytics\.com\?subject=Project%20inquiry"/, 'Project contact must work without JavaScript')

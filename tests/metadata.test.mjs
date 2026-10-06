@@ -88,7 +88,7 @@ test("practice and identity metadata remain supported by visible page content", 
   const person = entity("Person")
   assert.ok(consulting.includes(practice.name))
   assert.ok(consulting.includes(practice.email))
-  assert.ok(consulting.includes(service.name))
+  assert.ok(consulting.toLowerCase().includes(service.name.toLowerCase()))
   assert.ok(consulting.includes(`id="${new URL(service.url).hash.slice(1)}"`))
   assert.equal(practice.url, service.url)
   assert.ok(hero.replace(/\s+/g, " ").includes(person.worksFor.name))

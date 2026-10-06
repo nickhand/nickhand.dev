@@ -14,12 +14,12 @@ export const writing: WritingItem[] = [
     date: "2025-02-25",
   },
   {
-    title: "Philadelphia’s budget, explained (2026–27)",
+    title: "Philadelphia’s budget, explained (2026–⁠27)",
     href: "https://thephiladelphiacitizen.org/mayor-parker-2026-budget/",
     meta: "dataviz · philadelphia",
   },
   {
-    title: "Pennsylvania’s budget, explained (2026–27)",
+    title: "Pennsylvania’s budget, explained (2026–⁠27)",
     href: "https://thephiladelphiacitizen.org/pa-budget-2026/",
     meta: "dataviz · pennsylvania",
   },

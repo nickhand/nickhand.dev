@@ -17,7 +17,7 @@
         through Wissahickon Analytics.
       </p>
       <ul
-        class="mt-6 divide-y divide-zinc-200 border-y border-zinc-200"
+        class="mt-6 divide-y divide-zinc-200"
       >
         <WritingItem
           v-for="item in writing"
